@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@font-face {
+    font-family: Anjoman;
+    src: url("../font/Anjoman-Black\ [@ClubEdits].ttf") format("ttf"),
+         url("../font/Anjoman-ExtraBold\ [@ClubEdits].ttf") format("ttf"),
+         url("../font/Anjoman-ExtraLight\ [@ClubEdits].ttf") format("ttf"),
+         url("../font/Anjoman-Heavy\ [@ClubEdits].ttf") format("ttf"),
+         url("../font/Anjoman-Medium\ [@ClubEdits].ttf") format("ttf"),
+         url("../font/Anjoman-SemiBold\ [@ClubEdits].ttf") format("ttf"),
+         url("../font/Anjoman-Thin\ [@ClubEdits].ttf") format("ttf");
+}
+
+body{
+    font-family: Anjoman;
+    background: #DFD3C8;
+}
+
+.searchBarboxShadow{
+    box-shadow: 0px 2.5px 5px 0px rgba(241, 31, 25, 0.25) inset;
+}
+
+.searchbarboxbuttonshadow{
+    box-shadow: 0px 0px 5px 0px rgba(241, 31, 25, 0.25) inset;
+}
