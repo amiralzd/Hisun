@@ -5,18 +5,18 @@
 
 
 @font-face {
-    font-family: Anjoman;
-    src: url("../font/Anjoman-Black\ [@ClubEdits].ttf") format("ttf"),
-         url("../font/Anjoman-ExtraBold\ [@ClubEdits].ttf") format("ttf"),
-         url("../font/Anjoman-ExtraLight\ [@ClubEdits].ttf") format("ttf"),
-         url("../font/Anjoman-Heavy\ [@ClubEdits].ttf") format("ttf"),
-         url("../font/Anjoman-Medium\ [@ClubEdits].ttf") format("ttf"),
-         url("../font/Anjoman-SemiBold\ [@ClubEdits].ttf") format("ttf"),
-         url("../font/Anjoman-Thin\ [@ClubEdits].ttf") format("ttf");
+    font-family: anjoman;
+    src: url('../font/AnjomanBlack.ttf') format('ttf'),
+        url('../font/AnjomanExtraBold.ttf') format('ttf'),
+        url('../font/AnjomanExtraLight.ttf') format('ttf'),
+        url('../font/AnjomanHeavy.ttf') format('ttf'),
+        url('../font/AnjomanMedium.ttf') format('ttf'),
+        url('../font/AnjomanSemiBold.ttf') format('ttf'),
+        url('../font/AnjomanThin.ttf') format('ttf');
 }
 
 body{
-    font-family: Anjoman;
+    font-family: anjoman;
     background: #DFD3C8;
 }
 
@@ -50,6 +50,7 @@ body{
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    font-family: Anjoman;
 }
 
 .textboxbigbanner2{
@@ -65,4 +66,12 @@ body{
 
 .fleshbigbanner{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.bg-text-newArrival{
+    background: linear-gradient(0deg, #F11F19 0%, #F11F19 100%);
+}
+
+.boxsh-grids-new-arrival{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
