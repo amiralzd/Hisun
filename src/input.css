@@ -75,3 +75,18 @@ body{
 .boxsh-grids-new-arrival{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+.andre-francois-bg-img{
+    background-image: url(../img/kitchen.png);
+}
+
+.andre-francois-style-titr{
+    border-radius: 30px;
+    background: #F11F19;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(2px);
+}
+
+.andre-francois-style-slideButton{
+    padding: 7.193px 6.939px 6.937px 7.191px;
+}
