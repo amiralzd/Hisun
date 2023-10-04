@@ -149,3 +149,22 @@ body{
     border-radius: 40px;
     background: rgba(255, 251, 250, 0.50);
 }
+
+#email::placeholder{
+    color: #000;
+    text-align: justify;
+    font-family: Anjoman;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+#email{
+    width: 348px;
+    outline: none;
+}
+
+.Footer-style-bg{
+    background: linear-gradient(270deg, rgba(255, 251, 250, 0.00) 0%, #FFFBFA 49.6%, rgba(255, 251, 250, 0.00) 99.2%);
+}
