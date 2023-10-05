@@ -31,7 +31,7 @@
 
 
     <!-- header -->
-    <header class="w-[1424px] h-[54px]] mt-[49px] ml-[27px] mr-[61px] mb-[32px] flex">
+    <header class="w-[1424px] h-[54px]] mt-[49px] ml-[27px] mr-[61px] mb-[32px] flex max-sm:hidden">
         <div class="w-[1208px] h-[54px]] justify-center items-center gap-[200px] flex">
             <div class="w-[849px] h-[54px]] flex">
                 <div class="w-[60px] h-[59.961px] mr-[-20px]]">
@@ -89,8 +89,35 @@
 
 
     <!-- Navbar -->
-    <div class="w-full h-[62px] bg-[#fff] pr-[40px] pl-[40px] pt-[10px] pb-[10px] border-t-[2px] border-solid border-red-600 navbarBoxshadow flex justify-center items-center gap-[200px] sticky top-0 z-[2]">
-        <div class="w-[1042px] h-[27px] mt-[10px] mb-[10px] flex justify-center items-center gap-[50px]">
+    <div class="w-full h-[62px] bg-[#fff] pr-[40px] pl-[40px] pt-[10px] pb-[10px] border-t-[2px] border-solid border-red-600 navbarBoxshadow flex justify-center items-center gap-[200px] sticky top-0 z-[2] max-sm:w-full max-sm:h-[82px] max-sm:flex max-sm:justify-between max-sm:items-center max-sm:pt-[25px] max-sm:pb-[25px] max-sm:pr-[20px] max-sm:pl-[20px] max-sm:gap-0 max-sm:border-none max-sm:p-0">
+        <!-- responsive -->
+
+        <button class="w-[24px] h-[24px] sm:hidden flex bg-yellow-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                <path d="M6.5 6H22.5" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M6.5 10H22.5" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M6.5 14H22.5" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M6.5 18H22.5" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+
+        </button>
+        <div class="w-[113px] h-[32px] bg-orange-400 flex justify-center items-center gap-[10px] sm:hidden">
+              <div class="w-[32px] h-[32px]">
+                  <img src="img/6 1.png" alt="">
+              </div>
+              <div class="w-[71px] h-[22px]">
+                  <img src="img/logo (4) 1.png" alt="">
+              </div>
+        </div>
+        <div class="w-[20px] h-[20px] bg-red-600">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                <path d="M15.9166 15.4167L18.8333 18.3333M18 9.58332C18 5.21107 14.4555 1.66666 10.0833 1.66666C5.71104 1.66666 2.16663 5.21107 2.16663 9.58332C2.16663 13.9556 5.71104 17.5 10.0833 17.5C14.4555 17.5 18 13.9556 18 9.58332Z" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+        </div>
+
+        <!-- responsive -->
+
+        <div class="w-[1042px] h-[27px] mt-[10px] mb-[10px] flex justify-center items-center gap-[50px] max-sm:hidden">
             <div class="w-[132px] h-[27px] flex justify-center items-center gap-[5px]">
                 <a href="" class="w-[24px] h-[24px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -162,7 +189,7 @@
                 <a href="" class="w-[88px] h-[27px] text-[#282828] leading-normal font-semibold not-italic text-[20px]"><h1>تماس با ما</h1></a>
             </div>
         </div>
-        <div class="w-[170px] h-[42px] flex justify-center items-center gap-[10px]">
+        <div class="w-[170px] h-[42px] flex justify-center items-center gap-[10px] max-sm:hidden">
             <div class="w-[118px] h-[27px] text-[#282828] leading-normal font-semibold not-italic text-[20px]"><h1>درباره هایسان</h1></div>
             <div class="w-[42px] h-[42px]">
                 <img src="img/6 1.png" alt="">
@@ -171,9 +198,9 @@
     </div>
     <!-- Navbar -->
 
-    <!-- big banner -->
-    <div class="w-full h-[450px] mt-[71px] flex relative mb-[69.72px]">
-        <a href="" class="w-[56px] h-[188px] bg-[#F11F19] mt-[116px] mr-[70px] mb-[146px] absolute rounded-tr-[24px] rounded-br-[24px]">
+      <!-- big banner --> <!-- responsive -->
+    <div class="w-full h-[450px] mt-[71px] flex relative mb-[69.72px] max-sm:bg-orange-500 max-sm:w-full max-sm:h-[235.186px]">
+        <a href="" class="w-[56px] h-[188px] bg-[#F11F19] mt-[116px] mr-[70px] mb-[146px] absolute rounded-tr-[24px] rounded-br-[24px] max-sm:hidden">
             <div class="w-[32px] h-[32px] mt-[74px] ml-[12px] mr-[12px] mb-[82px] fleshbigbanner">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="36" viewBox="0 0 32 36" fill="none">
                     <g filter="url(#filter0_d_1840_2027)">
@@ -194,13 +221,34 @@
                   </svg>
             </div>
         </a>
-        <div class="w-[1293px] h-[450px] mr-[126px] ml-[120px] rounded-[40px] bigbannerimg relative">
-            <div class="w-[486px] h-[303px] bgboxinbigbanner ml-[107px] mr-[700px] mt-[86px] mb-[65.28px] absolute rounded-[10px]">
-                <div class="w-[356px] h-[54px] mt-[44px] mr-[65px] ml-[65px] mb-[26px] textboxbigbanner1"><p>هایسان، خرید آسان!</p></div>
-                <div class="w-[406px] h-[66px] mr-[40px] ml-[40px] mb-[34px] textboxbigbanner2"><p>با هایسان از خرید کردن لذت ببرید و راحتی را به خانه‌هایتان بیاورید.</p></div>
-                <button class="w-[180px] h-[52px] mr-[153px] ml-[153px] relative">
-                    <div class="w-[130px] h-[22px] absolute mt-[14px] mb-[16px] mr-[25px] ml-[25px] text-[18px] leading-normal not-italic font-extrabold text-[#fff] text-center"><h1>مشاهده محصولات</h1></div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="188" height="60" viewBox="0 0 188 60" fill="none">
+        <div class="w-[1293px] h-[450px] mr-[126px] ml-[120px] rounded-[40px] bigbannerimg relative max-sm:w-[80%] max-sm:h-[235.186px] max-sm:m-auto max-sm:bg-none bg-red-600">
+            
+            <div class="w-[486px] h-[303px] bgboxinbigbanner ml-[107px] mr-[700px] mt-[86px] mb-[65.28px] absolute rounded-[10px] max-sm:w-[161px] max-sm:h-[101px] max-sm:mt-[60px] max-sm:mr-[250px] max-sm:mb-[30px]">
+
+                <div class="w-[356px] h-[54px] mt-[44px] mr-[65px] ml-[65px] mb-[26px] textboxbigbanner1 max-sm:w-[125px] max-sm:h-[19px] max-sm:text-[14px] max-sm:mt-[15px] max-sm:mr-[18px] max-sm:mb-[10px] max-sm:ml-[18px]"><p>هایسان، خرید آسان!</p></div>
+                <div class="w-[406px] h-[66px] mr-[40px] ml-[40px] mb-[34px] textboxbigbanner2 max-sm:w-[131px] max-sm:h-[22px] max-sm:text-[8px] max-sm:mr-[15px] max-sm:mb-[12px] max-sm:ml-[15px]"><p>با هایسان از خرید کردن لذت ببرید و راحتی را به خانه‌هایتان بیاورید.</p></div>
+                <button class="w-[180px] h-[52px] mr-[153px] ml-[153px] relative max-sm:w-[52px] max-sm:h-[14.827px] max-sm:mr-[55px] max-sm:mb-[8.17px] max-sm:ml-[54px]">
+                    <div class="w-[130px] h-[22px] absolute mt-[14px] mb-[16px] mr-[25px] ml-[25px] text-[18px] leading-normal not-italic font-extrabold text-[#fff] text-center max-sm:w-[33px] max-sm:h-[5px] max-sm:text-[4px] max-sm:mt-[4px] max-sm:mr-[9px] max-sm:ml-[10px] max-sm:mb-[5.83px]"><h1>مشاهده محصولات</h1></div>
+
+                    <svg class="sm:hidden" xmlns="http://www.w3.org/2000/svg" width="60" height="23" viewBox="0 0 60 23" fill="none">
+                        <g filter="url(#filter0_d_1888_3570)">
+                          <rect x="4" width="52" height="14.8267" rx="4" fill="#F11F19"/>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_1888_3570" x="0" y="0" width="60" height="22.8267" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1888_3570"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1888_3570" result="shape"/>
+                          </filter>
+                        </defs>
+                      </svg>
+
+                    <svg class="max-sm:hidden" xmlns="http://www.w3.org/2000/svg" width="188" height="60" viewBox="0 0 188 60" fill="none">
                         <g filter="url(#filter0_d_1773_2087)">
                           <rect x="4" width="180" height="52" rx="10" fill="#F11F19"/>
                         </g>
@@ -219,8 +267,9 @@
                       </svg>
                 </button>
             </div>
+            <img class="sm:hidden bg-cover w-full h-[235.186px] z-[-1]" src="img/Group 5194.png" alt="">
         </div>
-        <a href="" class="w-[56px] h-[188px] bg-[#F11F19] mt-[116px] left-[64px] mb-[146px] absolute rounded-tl-[24px] rounded-bl-[24px]">
+        <a href="" class="w-[56px] h-[188px] bg-[#F11F19] mt-[116px] left-[64px] mb-[146px] absolute rounded-tl-[24px] rounded-bl-[24px] max-sm:hidden">
             <div class="w-[32px] h-[32px] mt-[74px] ml-[12px] mr-[12px] mb-[82px] fleshbigbanner">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                     <path d="M20.1201 5.43957L11.4268 14.1329C10.4001 15.1596 10.4001 16.8396 11.4268 17.8662L20.1201 26.5596" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
