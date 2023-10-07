@@ -168,3 +168,13 @@ body{
 .Footer-style-bg{
     background: linear-gradient(270deg, rgba(255, 251, 250, 0.00) 0%, #FFFBFA 49.6%, rgba(255, 251, 250, 0.00) 99.2%);
 }
+
+.eril-mclean-bg{
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.80);
+}
+
+.responsive-Rectangle1-bg{
+    background: #F9F9F9;
+    filter: drop-shadow(0px 4px 4px rgba(58, 121, 160, 0.25));
+}
