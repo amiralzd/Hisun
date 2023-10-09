@@ -20,7 +20,8 @@
     </script>
     <title>Document</title>
 </head>
-<body class="relative">
+<body>
+
 
 
     <!-- header -->
@@ -81,12 +82,19 @@
     <!-- header -->
 
 
+
+    <!-- burger Menu -->
+    <div class="w-full h-[100vh] bg-black"></div>
+    <!-- burger Menu -->
+
+
+
     <!-- Navbar -->
     <nav>
         <div class="w-full h-[62px] bg-[#fff] pr-[40px] pl-[40px] pt-[10px] pb-[10px] border-t-[2px] border-solid border-red-600 navbarBoxshadow flex justify-center items-center gap-[200px] sticky top-0 z-[2] max-sm:w-full max-sm:h-[82px] max-sm:flex max-sm:justify-between max-sm:items-center max-sm:pt-[25px] max-sm:pb-[25px] max-sm:pr-[20px] max-sm:pl-[20px] max-sm:gap-0 max-sm:border-none">
             <!-- responsive -->
     
-            <button class="w-[24px] h-[24px] sm:hidden flex">
+            <button onclick="burgerMenu()" class="w-[24px] h-[24px] sm:hidden flex">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                     <path d="M6.5 6H22.5" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round"/>
                     <path d="M6.5 10H22.5" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round"/>
@@ -192,6 +200,11 @@
         </div>
     </nav>
     <!-- Navbar -->
+
+
+    
+
+
 
       <!-- big banner --> <!-- responsive -->
     <div class="w-full h-[450px] mt-[71px] flex relative mb-[69.72px] max-sm:w-full max-sm:h-[235.186px]">
@@ -793,21 +806,21 @@
             <a href=""><p>از آخرین تخفیف ها مطلع شوید</p></a>
         </div>
 
-        <div class="w-[368px] h-[60px] absolute bg-[#fff] p-[10px] rounded-[10px] flex justify-end items-center gap-[10px] flex-shrink-0 top-[158px] flex-row-reverse left-[74px] max-sm:hidden">
-            
+        <div class="w-[368px] h-[60px] absolute bg-[#fff] p-[10px] rounded-[10px] flex justify-end items-center gap-[10px] flex-shrink-0 top-[158px] flex-row-reverse left-[74px] max-sm:w-[100px] max-sm:h-[21px] max-sm:top-[159px] max-sm:right-[280px] max-sm:rounded-[4px] max-sm:p-0">
+            <input type="email" class="w-[358px] h-[50px] max-sm:w-[100px] max-sm:h-[21px] max-sm:rounded-[4px] outline-none" name="email" placeholder="ایمیل خود را وارد کنید...">
         </div>
 
         <button class="w-[155px] h-[48px] absolute bg-[#f11f19] rounded-[10px] top-[262px] right-[1284px] flex p-[10px] justify-center items-center gap-[10px] flex-shrink-0">
             <div class="w-[24px] h-[19px] text-[#fff] text-center text-[14px] font-semibold leading-normal"><h1>ثبت</h1></div>
         </button>
 
-        <div class="w-[1442px] h-0  border-solid border-[2px] absolute Footer-style-bg top-[365px] right-[36px] max-sm:w-full max-sm:top-[212px]"></div>
+        <div class="w-[1442px] h-0  border-solid border-[2px] absolute Footer-style-bg top-[365px] right-[36px] max-sm:w-full max-sm:top-[212px] max-sm:right-0"></div>
 
-        <div class="w-[404px] h-[50px] absolute top-[390px] right-[555px]">
+        <div class="w-[404px] h-[50px] absolute top-[390px] right-[555px] max-sm:w-[90px] max-sm:h-[10px] max-sm:top-[220px] max-sm:right-[150px]">
             <img src="img/p.png" alt="">
         </div>
 
-        <div class="w-[40px] h-[40px] absolute top-[456px] right-[737px]">
+        <div class="w-[40px] h-[40px] absolute top-[456px] right-[737px] max-sm:w-[6px] max-sm:h-[6px] max-sm:top-[234px] max-sm:right-[192px]">
             <img src="img/eskano-logo.png" alt="">
         </div>
     </div>
