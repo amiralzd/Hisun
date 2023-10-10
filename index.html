@@ -25,7 +25,7 @@
 
 
     <!-- header -->
-    <header class="w-[1424px] h-[54px]] mt-[49px] ml-[27px] mr-[61px] mb-[32px] flex max-sm:hidden">
+    <header class="w-[1424px] h-[54px]] mt-[49px] m-auto mb-[32px] flex justify-center items-center max-sm:hidden">
         <div class="w-[1208px] h-[54px]] justify-center items-center gap-[200px] flex">
             <div class="w-[849px] h-[54px]] flex">
                 <div class="w-[60px] h-[59.961px] mr-[-20px]]">
@@ -83,18 +83,113 @@
 
 
 
-    <!-- burger Menu -->
-    <div class="w-full h-[100vh] bg-black"></div>
-    <!-- burger Menu -->
+    <!-- button |  burger Menu -->
+    <div id="burger-Menu" class="w-full h-[800px] bg-burger-menu absolute z-[5] hidden">
+        <div class="w-[276px] h-[497px] pt-[5px] burger-menu-screen-style">
+            <div onclick="hideBurgerMenu()" class="w-[23px] h-[23px] mr-[12px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18.3 5.71001C18.2075 5.61731 18.0976 5.54376 17.9766 5.49358C17.8556 5.4434 17.7259 5.41757 17.595 5.41757C17.464 5.41757 17.3343 5.4434 17.2134 5.49358C17.0924 5.54376 16.9825 5.61731 16.89 5.71001L12 10.59L7.10998 5.70001C7.0174 5.60743 6.90749 5.53399 6.78652 5.48388C6.66556 5.43378 6.53591 5.40799 6.40498 5.40799C6.27405 5.40799 6.1444 5.43378 6.02344 5.48388C5.90247 5.53399 5.79256 5.60743 5.69998 5.70001C5.6074 5.79259 5.53396 5.9025 5.48385 6.02347C5.43375 6.14443 5.40796 6.27408 5.40796 6.40501C5.40796 6.53594 5.43375 6.66559 5.48385 6.78655C5.53396 6.90752 5.6074 7.01743 5.69998 7.11001L10.59 12L5.69998 16.89C5.6074 16.9826 5.53396 17.0925 5.48385 17.2135C5.43375 17.3344 5.40796 17.4641 5.40796 17.595C5.40796 17.7259 5.43375 17.8556 5.48385 17.9766C5.53396 18.0975 5.6074 18.2074 5.69998 18.3C5.79256 18.3926 5.90247 18.466 6.02344 18.5161C6.1444 18.5662 6.27405 18.592 6.40498 18.592C6.53591 18.592 6.66556 18.5662 6.78652 18.5161C6.90749 18.466 7.0174 18.3926 7.10998 18.3L12 13.41L16.89 18.3C16.9826 18.3926 17.0925 18.466 17.2134 18.5161C17.3344 18.5662 17.464 18.592 17.595 18.592C17.7259 18.592 17.8556 18.5662 17.9765 18.5161C18.0975 18.466 18.2074 18.3926 18.3 18.3C18.3926 18.2074 18.466 18.0975 18.5161 17.9766C18.5662 17.8556 18.592 17.7259 18.592 17.595C18.592 17.4641 18.5662 17.3344 18.5161 17.2135C18.466 17.0925 18.3926 16.9826 18.3 16.89L13.41 12L18.3 7.11001C18.68 6.73001 18.68 6.09001 18.3 5.71001Z" fill="#F11F19"/>
+                </svg>
+            </div>
+            <div class="w-[176px] h-[54px] mt-[17px] mr-[16px] flex gap-[20px]">
+                <div class="w-[54px] h-[54px]">
+                    <img class="w-[54px] h-[54px] rounded-full" src="img/default-profile-account-unknown-icon-black-silhouette-free-vector 1.png" alt="">
+                </div>
+                <div class="w-[102px] h-[54px] pt-[14px] pl-[17px] pb-[15px]">
+                    <div class="w-[85px] h-[25px] text-[#282828] text-[18px] font-medium not-italic leading-normal"><p>نازنین پرماه</p></div>
+                </div>
+            </div>
+
+            <button onclick="MahsolatIcon()" class="w-[276px] h-[54px] mt-[41px] flex">
+                <div class="w-[54px] h-[54px] mr-[16px] p-[15px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3.01001 11.22V15.71C3.01001 20.2 4.81001 22 9.30001 22H14.69C19.18 22 20.98 20.2 20.98 15.71V11.22" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12C13.83 12 15.18 10.51 15 8.68L14.34 2H9.66999L8.99999 8.68C8.81999 10.51 10.17 12 12 12Z" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.31 12C20.33 12 21.81 10.36 21.61 8.35L21.33 5.6C20.97 3 19.97 2 17.35 2H14.3L15 9.01C15.17 10.66 16.66 12 18.31 12Z" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.63988 12C7.28988 12 8.77988 10.66 8.93988 9.01L9.15988 6.8L9.63988 2H6.58988C3.96988 2 2.96988 3 2.60988 5.6L2.33988 8.35C2.13988 10.36 3.61988 12 5.63988 12Z" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 17C10.33 17 9.5 17.83 9.5 19.5V22H14.5V19.5C14.5 17.83 13.67 17 12 17Z" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+                <div class="w-[64px] h-[22px] mt-[15px] text-[#282828] text-[16px] font-medium not-italic leading-normal ml-[6px]"><p>محصولات</p></div>
+                <div class="w-[20px] h-[20px] mt-[18px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5.83325 8.33334L9.99992 11.6667L14.1666 8.33334" stroke="#282828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+            </button>
+
+            <div id="mahsolat-icon" class="absolute hidden bg-[#DFD3C8] w-[276px] h-[168px] z-[5] pr-[74px] text-[#282828] text-[16px] font-medium not-italic leading-normal">
+                <div class="w-[75px] h-[22px] mb-[25px]">
+                    <a href="" ><p>لوازم خانگی</p></a>
+                </div>
+                <div class="w-[91px] h-[22px] mb-[25px]">
+                    <a href=""><p>لوازم گرمایشی</p></a>
+                </div>
+                <div class="w-[96px] h-[22px] mb-[25px]">
+                    <a href=""><p>لوازم سرمایشی</p></a>
+                </div>
+                <div class="w-[30px] h-[22px]">
+                    <a href=""><p>سایر</p></a>
+                </div>
+            </div>
+
+            <div class="w-full h-[1px] bg-[#f11f19] opacity-[0.2]"></div>
+
+            <a href="" class="w-[276px] h-[54px] flex">
+                <div class="w-[54px] h-[54px] mr-[16px] p-[15px] ml-[5px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M7.5 7.67001V6.70001C7.5 4.45001 9.31 2.24001 11.56 2.03001C14.24 1.77001 16.5 3.88001 16.5 6.51001V7.89001" stroke="#F11F19" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.00007 22H15.0001C19.0201 22 19.7401 20.39 19.9501 18.43L20.7001 12.43C20.9701 9.99 20.2701 8 16.0001 8H8.00007C3.73007 8 3.03007 9.99 3.30007 12.43L4.05007 18.43C4.26007 20.39 4.98007 22 9.00007 22Z" stroke="#F11F19" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.4955 12H15.5045" stroke="#F11F19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.49451 12H8.50349" stroke="#F11F19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+                <div class="w-[65px] h-[22px] mt-[15px] text-[#282828] text-[16px] font-medium not-italic leading-normal"><p>سبد خرید</p></div>
+            </a>
+            <div class="w-full h-[1px] bg-[#f11f19] opacity-[0.2]"></div>
+
+            <a href="" class="w-[276px] h-[54px] flex">
+                <div class="w-[54px] h-[54px] mr-[16px] p-[15px] ml-[5px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M17 18.4301H13L8.54999 21.39C7.88999 21.83 7 21.3601 7 20.5601V18.4301C4 18.4301 2 16.4301 2 13.4301V7.42999C2 4.42999 4 2.42999 7 2.42999H17C20 2.42999 22 4.42999 22 7.42999V13.4301C22 16.4301 20 18.4301 17 18.4301Z" stroke="#F11F19" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.0001 11.36V11.15C12.0001 10.47 12.4201 10.11 12.8401 9.82001C13.2501 9.54001 13.66 9.18002 13.66 8.52002C13.66 7.60002 12.9201 6.85999 12.0001 6.85999C11.0801 6.85999 10.3401 7.60002 10.3401 8.52002" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.9955 13.75H12.0045" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+                <div class="w-[132px] h-[22px] mt-[15px] text-[#282828] text-[16px] font-medium not-italic leading-normal"><p>خدمات پس از فروش</p></div>
+            </a>
+            <div class="w-full h-[1px] bg-[#f11f19] opacity-[0.2]"></div>
+
+            <a href="" class="w-[276px] h-[54px] flex">
+                <div class="w-[54px] h-[54px] mr-[16px] p-[15px] ml-[5px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 8C20.6569 8 22 6.65685 22 5C22 3.34315 20.6569 2 19 2C17.3431 2 16 3.34315 16 5C16 6.65685 17.3431 8 19 8Z" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 13H12" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 17H16" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15V10" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+                <div class="w-[47px] h-[22px] mt-[15px] text-[#282828] text-[16px] font-medium not-italic leading-normal"><p>اعلانات</p></div>
+            </a>
+            <div class="w-full h-[1px] bg-[#f11f19] opacity-[0.2]"></div>
+            <div class="w-[130px] h-[32px] mt-[95px] m-auto flex gap-[10px] justify-center items-center">
+                <div class="w-[88px] h-[19px] text-center text-[#282828] text-[14px] font-extrabold not-italic leading-normal"><p>درباره هایسان</p></div>
+                <div class="w-[32px] h-[32px]">
+                    <img src="img/6 2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- button |  burger Menu -->
 
 
 
     <!-- Navbar -->
-    <nav>
-        <div class="w-full h-[62px] bg-[#fff] pr-[40px] pl-[40px] pt-[10px] pb-[10px] border-t-[2px] border-solid border-red-600 navbarBoxshadow flex justify-center items-center gap-[200px] sticky top-0 z-[2] max-sm:w-full max-sm:h-[82px] max-sm:flex max-sm:justify-between max-sm:items-center max-sm:pt-[25px] max-sm:pb-[25px] max-sm:pr-[20px] max-sm:pl-[20px] max-sm:gap-0 max-sm:border-none">
+    <nav class=" sticky top-0 z-[2]">
+        <div class="w-[1513px] h-[62px] m-auto bg-[#fff] pr-[40px] pl-[40px] pt-[10px] pb-[10px] border-t-[2px] border-solid border-red-600 navbarBoxshadow flex justify-center items-center gap-[200px] max-sm:w-full max-sm:h-[82px] max-sm:flex max-sm:justify-between max-sm:items-center max-sm:pt-[25px] max-sm:pb-[25px] max-sm:pr-[20px] max-sm:pl-[20px] max-sm:gap-0 max-sm:border-none">
             <!-- responsive -->
     
-            <button onclick="burgerMenu()" class="w-[24px] h-[24px] sm:hidden flex">
+            <button onclick="showburgerMenu()" class="w-[24px] h-[24px] sm:hidden flex">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                     <path d="M6.5 6H22.5" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round"/>
                     <path d="M6.5 10H22.5" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round"/>
@@ -207,7 +302,7 @@
 
 
       <!-- big banner --> <!-- responsive -->
-    <div class="w-full h-[450px] mt-[71px] flex relative mb-[69.72px] max-sm:w-full max-sm:h-[235.186px]">
+    <div class="w-[1513px] h-[450px] m-auto mt-[71px] flex relative mb-[69.72px] max-sm:w-full max-sm:h-[235.186px]">
         <a href="" class="w-[56px] h-[188px] bg-[#F11F19] mt-[116px] mr-[70px] mb-[146px] absolute rounded-tr-[24px] rounded-br-[24px] max-sm:hidden">
             <div class="w-[32px] h-[32px] mt-[74px] ml-[12px] mr-[12px] mb-[82px] fleshbigbanner">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="36" viewBox="0 0 32 36" fill="none">
@@ -335,7 +430,7 @@
     
     <!-- andre-francois | responsive -->
     <div class="w-full h-[829.69px] andre-francois-bg-img pt-[206px] mb-[48.31px] max-sm:w-full max-sm:h-[252px] max-sm:pt-[68px] max-sm:relative max-sm:bg-none max-sm:mb-[55px]">
-        <div class="w-[697px] h-[44px] andre-francois-style-titr mb-[123px] mr-[397.83px] ml-[398px] text-[32px] not-italic font-semibold leading-normal text-center text-[#fff] max-sm:w-[272px] max-sm:h-[26px] max-sm:mr-[50px] max-sm:mb-0 max-sm:ml-0 max-sm:text-[12px] max-sm:absolute"><h1>خلاقیت مخصوص خانه‌ی شما، با لوازم خانگی هایسان.</h1></div>
+        <div class="w-[697px] h-[44px] andre-francois-style-titr mb-[123px] m-auto text-[32px] not-italic font-semibold leading-normal text-center text-[#fff] max-sm:w-[272px] max-sm:h-[26px] max-sm:mr-[50px] max-sm:mb-0 max-sm:ml-0 max-sm:text-[12px] max-sm:absolute"><h1>خلاقیت مخصوص خانه‌ی شما، با لوازم خانگی هایسان.</h1></div>
 
         <div class="w-[1395px] h-[44px] m-auto flex items-start justify-between max-sm:w-[90%] max-sm:h-[24px] max-sm:absolute max-sm:mr-[20px] max-sm:mt-[50px] max-sm:ml-[34px]">
             <a href="" class="w-[43.978px] h-[43.978px] andre-francois-style-slideButton bg-[#F11F19] flex items-center justify-center flex-shrink-0 rounded-[13.822px] max-sm:w-[24px] max-sm:h-[24px] max-sm:rounded-[8px]">
@@ -363,7 +458,7 @@
                   </svg>
             </a>
         </div>
-        <div class="w-[143px] h-[9.46px] mt-[346.02px] mr-[685.05px] ml-[685px] gap-[23.64px] flex max-sm:hidden">
+        <div class="w-[143px] h-[9.46px] mt-[346.02px]  m-auto gap-[23.64px] flex max-sm:hidden">
             <a href="" class="w-[9.46px] h-[9.46px] bg-[#fff] rounded-full"></a>
             <a href="" class="w-[9.46px] h-[9.46px] bg-[#fff] rounded-full"></a>
             <a href="" class="w-[43.5px] h-[9.46px] bg-[#fff] rounded-[48.852px] andre-francois-style-sliderpage"></a>
@@ -553,7 +648,7 @@
     <!-- Rectangle 1 | responsive -->
 
     <!-- Rectangle 1 -->
-    <div class="w-full h-[858px] Rectangle1-style bg-[#F9F9F9] pt-[61px] mb-[112px] max-sm:hidden">
+    <div class="w-[1513px] h-[858px] Rectangle1-style bg-[#F9F9F9] pt-[61px] mb-[112px] max-sm:hidden m-auto">
         <div class="w-[316px] h-[37px] m-auto mb-[11px] text-[#282828] text-center font-semibold leading-[36.527px] not-italic tracking-[0.48px] text-[24px]"><h1>محبوب‌ترین محصولات هایسان</h1></div>
         <div class="w-[316px] h-[5px] m-auto bg-[#F11F19] mb-[127px]"></div>
         <div class="w-[1422px] h-[333px] m-auto grid grid-cols-4 gap-[30px] mb-[34px]">
@@ -655,18 +750,20 @@
     <!-- Brands | responsive -->
 
     <!-- Brands -->
-    <div class="w-full h-[95px] bg-[#F11F19] flex mb-[99px] max-sm:w-full max-sm:h-[39px] max-sm:justify-center max-sm:items-center max-sm:mb-[20px]">
-        <div class="w-[172px] h-[42px] mt-[34px] mr-[156px] mb-[19px] ml-[275px] max-sm:w-[43px] max-sm:h-[10px] max-sm:ml-[62px] max-sm:mr-0">
-            <img src="img/farsi 1.png" alt="">
-        </div>
-        <div class="w-[136px] h-[42px] mt-[32px] mb-[21px] ml-[222px] max-sm:w-[44px] max-sm:h-[13px] max-sm:ml-[62px] max-sm:mr-0">
-            <img src="img/l6 1.png" alt="">
-        </div>
-        <div class="w-[138px] h-[73px] mt-[11px] mb-[11px] ml-[191px] max-sm:w-[48px] max-sm:h-[25px] max-sm:ml-[62px] max-sm:mr-0">
-            <img src="img/header-logo-2 1.png" alt="">
-        </div>
-        <div class="w-[117px] h-[52px] mt-[22px] mb-[21px] ml-[114px] max-sm:w-[33px] max-sm:h-[15px] max-sm:ml-0 max-sm:mr-0">
-            <img src="img/Asset-2@2x 1.png" alt="">
+    <div class="w-full h-[95px]">
+        <div class="w-[1513px] h-[95px] m-auto bg-[#F11F19] flex mb-[99px] max-sm:w-full max-sm:h-[39px] max-sm:justify-center max-sm:items-center max-sm:mb-[20px]">
+            <div class="w-[172px] h-[42px] mt-[34px] mr-[156px] mb-[19px] ml-[275px] max-sm:w-[43px] max-sm:h-[10px] max-sm:ml-[62px] max-sm:mr-0">
+                <img src="img/farsi 1.png" alt="">
+            </div>
+            <div class="w-[136px] h-[42px] mt-[32px] mb-[21px] ml-[222px] max-sm:w-[44px] max-sm:h-[13px] max-sm:ml-[62px] max-sm:mr-0">
+                <img src="img/l6 1.png" alt="">
+            </div>
+            <div class="w-[138px] h-[73px] mt-[11px] mb-[11px] ml-[191px] max-sm:w-[48px] max-sm:h-[25px] max-sm:ml-[62px] max-sm:mr-0">
+                <img src="img/header-logo-2 1.png" alt="">
+            </div>
+            <div class="w-[117px] h-[52px] mt-[22px] mb-[21px] ml-[114px] max-sm:w-[33px] max-sm:h-[15px] max-sm:ml-0 max-sm:mr-0">
+                <img src="img/Asset-2@2x 1.png" alt="">
+            </div>
         </div>
     </div>
     <!-- Brands -->
@@ -759,69 +856,72 @@
             </a>
         </div>
 
-    <div class="w-full h-[524px] bg-[#000] relative max-sm:w-full max-sm:h-[245px]">
-        <div class="w-[61px] h-[61px] absolute top-[32px] right-[52px] max-sm:w-[33px] max-sm:h-[33px] max-sm:top-[16px] max-sm:right-[21px]">
-            <img src="img/6 2.png" alt="">
-        </div>
+    <div class="w-full h-[524px] max-sm:w-full max-sm:h-[245px] mt-[177px] max-sm:mt-0">
+        <div class="w-[1513px] h-[524px] relative m-auto bg-[#000]">
 
-        <div class="w-[90px] h-[27px] absolute top-[49px] right-[127px] max-sm:w-[48px] max-sm:h-[14px] max-sm:top-[26px] max-sm:right-[61px]">
-            <img src="img/logo (4) 1.png" alt="">
-        </div>
-
-        <div class="w-[214px] h-[33px] absolute top-[110px] right-[52px] max-sm:w-[89px] max-sm:h-[14px] max-sm:top-[74px] max-sm:right-[21px]">
-            <img src="img/text-footer.png" alt="">
-        </div>
-
-        <div class="w-[125px] h-[136px] absolute top-[183px] right-[92px] max-sm:w-[51px] max-sm:h-[55px] max-sm:top-[131px] max-sm:right-[37px]">
-            <img src="img/logo.png" alt="">
-        </div>
-
-        <div class="w-[11px] h-[11px] absolute bg-[#f11f19] rounded-full top-[62px] right-[400px] max-sm:w-[4px] max-sm:h-[4px] max-sm:top-[31px] max-sm:right-[164px]"></div>
-
-        <div class="w-[99px] h-[33px] absolute top-[46px] right-[428px] text-[#fff] text-right text-[24px] not-italic font-semibold leading-normal max-sm:w-[41px] max-sm:h-[14px] max-sm:top-[24px] max-sm:right-[174px] max-sm:text-[10px]"><h1>محصولات</h1></div>
-
-        <div class="w-[48px] h-[112px] absolute top-[102px] right-[428px] text-[#fff] text-right text-[14px] not-italic font-semibold leading-[200%] max-sm:top-[50px] max-sm:right-[174px] max-sm:text-[8px] max-sm:w-[28px] max-sm:h-[64px]">
-            <a href=""><p>فر</p></a>
-            <a href=""><p>هود</p></a>
-            <a href=""><p>اسپیلت</p></a>
-            <a href=""><p>آبگرمکن</p></a>
-        </div>
-
-        <div class="w-[11px] h-[11px] absolute bg-[#f11f19] rounded-full top-[62px] right-[673px] max-sm:w-[4px] max-sm:h-[4px] max-sm:top-[31px] max-sm:right-[296px]"></div>
-        
-        <div class="w-[112px] h-[33px] absolute top-[46px] right-[697px] text-[#fff] text-right text-[24px] not-italic font-semibold leading-normal max-sm:w-[47px] max-sm:h-[14px] max-sm:top-[24px] max-sm:right-[307px] max-sm:text-[10px]"><h1>دسترسی‌ها</h1></div>
-
-        <div class="w-[80px] h-[112px] absolute top-[102px] right-[697px] text-[#fff] text-right text-[14px] not-italic font-semibold leading-[200%] max-sm:w-[46px] max-sm:h-[64px] max-sm:top-[49px] max-sm:right-[309px] max-sm:text-[8px]">
-            <a href=""><p>خانه</p></a>
-            <a href=""><p>درباره ما</p></a>
-            <a href=""><p>تماس با ما</p></a>
-            <a href=""><p>راهنمای خرید</p></a>
-        </div>
-
-        <div class="w-[11px] h-[11px] absolute bg-[#f11f19] rounded-full top-[62px] right-[1048px] max-sm:w-[4px] max-sm:h-[4px] max-sm:top-[147px] max-sm:right-[164px]"></div>
-        
-        <div class="w-[78px] h-[33px] absolute top-[46px] right-[1071px] text-[#fff] text-right text-[24px] not-italic font-semibold leading-normal max-sm:w-[33px] max-sm:h-[14px] max-sm:top-[140px] max-sm:right-[176px] max-sm:text-[10px]"><h1>خبرنامه</h1></div>
-
-        <div class="w-[177px] h-[19px] absolute top-[102px] right-[1071px] text-[#fff] text-right text-[14px] not-italic font-semibold leading-[200%] max-sm:w-[101px] max-sm:h-[21px] max-sm:top-[164px] max-sm:right-[174px] max-sm:text-[8px]">
-            <a href=""><p>از آخرین تخفیف ها مطلع شوید</p></a>
-        </div>
-
-        <div class="w-[368px] h-[60px] absolute bg-[#fff] p-[10px] rounded-[10px] flex justify-end items-center gap-[10px] flex-shrink-0 top-[158px] flex-row-reverse left-[74px] max-sm:w-[100px] max-sm:h-[21px] max-sm:top-[159px] max-sm:right-[280px] max-sm:rounded-[4px] max-sm:p-0">
-            <input type="email" class="w-[358px] h-[50px] max-sm:w-[100px] max-sm:h-[21px] max-sm:rounded-[4px] outline-none text-[8px] p-[5px]" name="email" placeholder="ایمیل خود را وارد کنید...">
-        </div>
-
-        <button class="w-[155px] h-[48px] absolute bg-[#f11f19] rounded-[10px] top-[262px] right-[1284px] flex p-[10px] justify-center items-center gap-[10px] flex-shrink-0">
-            <div class="w-[24px] h-[19px] text-[#fff] text-center text-[14px] font-semibold leading-normal"><h1>ثبت</h1></div>
-        </button>
-
-        <div class="w-[1442px] h-0  border-solid border-[2px] absolute Footer-style-bg top-[365px] right-[36px] max-sm:w-full max-sm:top-[212px] max-sm:right-0"></div>
-
-        <div class="w-[404px] h-[50px] absolute top-[390px] right-[555px] max-sm:w-[90px] max-sm:h-[10px] max-sm:top-[220px] max-sm:right-[150px]">
-            <img src="img/p.png" alt="">
-        </div>
-
-        <div class="w-[40px] h-[40px] absolute top-[456px] right-[737px] max-sm:w-[6px] max-sm:h-[6px] max-sm:top-[234px] max-sm:right-[192px]">
-            <img src="img/eskano-logo.png" alt="">
+            <div class="w-[61px] h-[61px] absolute top-[32px] right-[52px] max-sm:w-[33px] max-sm:h-[33px] max-sm:top-[16px] max-sm:right-[21px]">
+                <img src="img/6 2.png" alt="">
+            </div>
+    
+            <div class="w-[90px] h-[27px] absolute top-[49px] right-[127px] max-sm:w-[48px] max-sm:h-[14px] max-sm:top-[26px] max-sm:right-[61px]">
+                <img src="img/logo (4) 1.png" alt="">
+            </div>
+    
+            <div class="w-[214px] h-[33px] absolute top-[110px] right-[52px] max-sm:w-[89px] max-sm:h-[14px] max-sm:top-[74px] max-sm:right-[21px]">
+                <img src="img/text-footer.png" alt="">
+            </div>
+    
+            <div class="w-[125px] h-[136px] absolute top-[183px] right-[92px] max-sm:w-[51px] max-sm:h-[55px] max-sm:top-[131px] max-sm:right-[37px]">
+                <img src="img/logo.png" alt="">
+            </div>
+    
+            <div class="w-[11px] h-[11px] absolute bg-[#f11f19] rounded-full top-[62px] right-[400px] max-sm:w-[4px] max-sm:h-[4px] max-sm:top-[31px] max-sm:right-[164px]"></div>
+    
+            <div class="w-[99px] h-[33px] absolute top-[46px] right-[428px] text-[#fff] text-right text-[24px] not-italic font-semibold leading-normal max-sm:w-[41px] max-sm:h-[14px] max-sm:top-[24px] max-sm:right-[174px] max-sm:text-[10px]"><h1>محصولات</h1></div>
+    
+            <div class="w-[48px] h-[112px] absolute top-[102px] right-[428px] text-[#fff] text-right text-[14px] not-italic font-semibold leading-[200%] max-sm:top-[50px] max-sm:right-[174px] max-sm:text-[8px] max-sm:w-[28px] max-sm:h-[64px]">
+                <a href=""><p>فر</p></a>
+                <a href=""><p>هود</p></a>
+                <a href=""><p>اسپیلت</p></a>
+                <a href=""><p>آبگرمکن</p></a>
+            </div>
+    
+            <div class="w-[11px] h-[11px] absolute bg-[#f11f19] rounded-full top-[62px] right-[673px] max-sm:w-[4px] max-sm:h-[4px] max-sm:top-[31px] max-sm:right-[296px]"></div>
+            
+            <div class="w-[112px] h-[33px] absolute top-[46px] right-[697px] text-[#fff] text-right text-[24px] not-italic font-semibold leading-normal max-sm:w-[47px] max-sm:h-[14px] max-sm:top-[24px] max-sm:right-[307px] max-sm:text-[10px]"><h1>دسترسی‌ها</h1></div>
+    
+            <div class="w-[80px] h-[112px] absolute top-[102px] right-[697px] text-[#fff] text-right text-[14px] not-italic font-semibold leading-[200%] max-sm:w-[46px] max-sm:h-[64px] max-sm:top-[49px] max-sm:right-[309px] max-sm:text-[8px]">
+                <a href=""><p>خانه</p></a>
+                <a href=""><p>درباره ما</p></a>
+                <a href=""><p>تماس با ما</p></a>
+                <a href=""><p>راهنمای خرید</p></a>
+            </div>
+    
+            <div class="w-[11px] h-[11px] absolute bg-[#f11f19] rounded-full top-[62px] right-[1048px] max-sm:w-[4px] max-sm:h-[4px] max-sm:top-[147px] max-sm:right-[164px]"></div>
+            
+            <div class="w-[78px] h-[33px] absolute top-[46px] right-[1071px] text-[#fff] text-right text-[24px] not-italic font-semibold leading-normal max-sm:w-[33px] max-sm:h-[14px] max-sm:top-[140px] max-sm:right-[176px] max-sm:text-[10px]"><h1>خبرنامه</h1></div>
+    
+            <div class="w-[177px] h-[19px] absolute top-[102px] right-[1071px] text-[#fff] text-right text-[14px] not-italic font-semibold leading-[200%] max-sm:w-[101px] max-sm:h-[21px] max-sm:top-[164px] max-sm:right-[174px] max-sm:text-[8px]">
+                <a href=""><p>از آخرین تخفیف ها مطلع شوید</p></a>
+            </div>
+    
+            <div class="w-[368px] h-[60px] absolute bg-[#fff] p-[10px] rounded-[10px] flex justify-end items-center gap-[10px] flex-shrink-0 top-[158px] flex-row-reverse left-[74px] max-sm:w-[100px] max-sm:h-[21px] max-sm:top-[159px] max-sm:right-[280px] max-sm:rounded-[4px] max-sm:p-0">
+                <input type="email" class="w-[358px] h-[50px] max-sm:w-[100px] max-sm:h-[21px] max-sm:rounded-[4px] outline-none max-sm:text-[8px] p-[5px]" name="email" placeholder="ایمیل خود را وارد کنید...">
+            </div>
+    
+            <button class="w-[155px] h-[48px] absolute bg-[#f11f19] rounded-[10px] top-[262px] right-[1284px] flex p-[10px] justify-center items-center gap-[10px] flex-shrink-0">
+                <div class="w-[24px] h-[19px] text-[#fff] text-center text-[14px] font-semibold leading-normal"><h1>ثبت</h1></div>
+            </button>
+    
+            <div class="w-[1442px] h-0  border-solid border-[2px] absolute Footer-style-bg top-[365px] right-[36px] max-sm:w-full max-sm:top-[212px] max-sm:right-0"></div>
+    
+            <div class="w-[404px] h-[50px] absolute top-[390px] right-[555px] max-sm:w-[90px] max-sm:h-[10px] max-sm:top-[220px] max-sm:right-[150px]">
+                <img src="img/p.png" alt="">
+            </div>
+    
+            <div class="w-[40px] h-[40px] absolute top-[456px] right-[737px] max-sm:w-[6px] max-sm:h-[6px] max-sm:top-[234px] max-sm:right-[192px]">
+                <img src="img/eskano-logo.png" alt="">
+            </div>
         </div>
     </div>
     <!-- Footer -->

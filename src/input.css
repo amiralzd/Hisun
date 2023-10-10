@@ -6,14 +6,21 @@
 
 @font-face {
     font-family: anjoman;
-    src: url('../font/AnjomanBlack.ttf') format('ttf'),
-        url('../font/AnjomanExtraBold.ttf') format('ttf'),
-        url('../font/AnjomanExtraLight.ttf') format('ttf'),
-        url('../font/AnjomanHeavy.ttf') format('ttf'),
-        url('../font/AnjomanMedium.ttf') format('ttf'),
-        url('../font/AnjomanSemiBold.ttf') format('ttf'),
-        url('../font/AnjomanThin.ttf') format('ttf');
+    src: url('../font/AnjomanMedium.ttf') format('ttf');
+
 }
+/* @font-face {
+    font-family: anjoman-black;
+    font-weight: extrablack;
+    src: url('../font/AnjomanBlack.ttf') format('ttf'),
+
+}
+@font-face {
+    font-family: anjoman-black;
+    font-weight: extrablack;
+    src: url('../font/AnjomanBlack.ttf') format('ttf'),
+
+} */
 
 body{
     font-family: anjoman;
@@ -78,6 +85,8 @@ body{
 
 .andre-francois-bg-img{
     background-image: url(../img/kitchen.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .andre-francois-style-titr{
@@ -187,3 +196,22 @@ body{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.bg-burger-menu{
+    background-color: #DFD3C8;
+    opacity: ;
+}
+
+.burger-menu-screen-style{
+    fill: #F9F3F1;
+    box-shadow: 10px 0px 95px 0px rgba(251, 84, 29, 0.15) inset;
+    backdrop-filter: blur(15px);
+}
+
+.burgerMenu-show{
+    display: block !important;
+}
+
+
+.mahsolat-show{
+    display: block !important;
+}
