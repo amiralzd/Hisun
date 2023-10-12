@@ -210,6 +210,7 @@ body{
 }
 
 
+/* css for big banner slide */
 
   body {
     height: 100vh;
@@ -240,9 +241,9 @@ body{
     background-color: #fff;
     font-size: 18px;
   } */
-  .btn:active {
+  /* .btn:active {
     transform: scale(1.1);
-  }
+  } */
   .btn-prev {
     /* top: 45%; */
     left: 2%;
@@ -258,4 +259,116 @@ body{
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.36);
     backdrop-filter: blur(17px);
+}
+
+
+
+/* css for New-arrival slide */
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#cCarousel {
+  position: relative;
+  /* max-width: 900px; */
+  margin: auto;
+}
+
+#cCarousel .arrow {
+  position: absolute;
+  top: 140px;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 1;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+#cCarousel #prev {
+  left: 0px;
+}
+
+#cCarousel #next {
+  right: 0px;
+}
+
+#carousel-vp {
+  width: 1272px;
+  height: 379px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+@media (max-width: 770px) {
+  #carousel-vp {
+    width: 510px;
   }
+}
+
+@media (max-width: 510px) {
+  #carousel-vp {
+    width: 250px;
+  }
+}
+
+#cCarousel #cCarousel-inner {
+  display: flex;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+  gap: 42.066px;
+  left: 0px;
+}
+
+.cCarousel-item {
+  width: 286.56px;
+  height: 313.56px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cCarousel-item img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 246px;
+  color: white;
+  border-radius: 24px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cCarousel-item .infos {
+  /* height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  color: black; */
+}
+
+.cCarousel-item .infos button {
+  /* background: #222;
+  padding: 10px 30px;
+  border-radius: 15px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer; */
+}
+
+
+/* css for andre-francois */

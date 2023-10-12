@@ -16,7 +16,7 @@ function MahsolatIcon(){
 
 
 
-
+// css for big banner slide
 
 "use strict";
 // Select all slides
