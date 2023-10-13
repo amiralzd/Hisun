@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joseph Odunsi" />
+    <meta name="description" content="Create an image slider with HTML, CSS and JavaScript" />
+    <meta name="keywords" content="image slider, carousel, codepen, css, js" />
+    
     <link rel="stylesheet" href="dist/output.css">
     <link rel="stylesheet" href="src/input.css">
     <script src="https://kit.fontawesome.com/cb5095bf42.js" crossorigin="anonymous"></script>
@@ -438,9 +442,57 @@
     <!-- New-arrival -->
     
     <!-- andre-francois | responsive -->
-    <div class="w-full h-[829.69px] pt-[206px] mb-[48.31px] max-sm:w-full max-sm:h-[252px] max-sm:pt-[68px] max-sm:relative max-sm:bg-none max-sm:mb-[55px] bg-emerald-400">
+    <div class="w-full h-[100vh] mb-[48.31px] max-sm:w-full max-sm:h-[252px] max-sm:pt-[68px] max-sm:relative max-sm:bg-none max-sm:mb-[55px] slide-container relative">
         
         
+        <div class="slides fade">
+            <div class="w-[717px] h-[64px] bg-[#f11f19] absolute right-[397.83px] top-[170px] p-[10px] andre-francois-titr-bg text-[#fff] text-[32px] not-italic font-semibold leading-normal"><p>خلاقیت مخصوص خانه‌ی شما، با لوازم خانگی هایسان.</p></div>
+            <img src="img/kitchen.png" alt="">
+        </div>
+        <div class="slides fade">
+            <img src='img/kitchen.png' alt=''>
+        </div>
+        <div class="slides fade">
+            <img src='img/kitchen.png' alt=''>
+        </div>
+        <div class="slides fade">
+            <img src='img/kitchen.png' alt=''>
+        </div>
+
+        
+      
+        <button class="prev w-[43.978px] h-[43.978px] bg-[#f11f19] right-[1409.85px] absolute rounded-[13.8px] p-[7px]" title="Previous">
+            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                <g clip-path="url(#clip0_1_455)">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1687 7.95112C14.3322 7.7876 14.3322 7.52249 14.1687 7.35897C14.0052 7.19545 13.7401 7.19545 13.5765 7.35897L6.11454 14.821L5.81846 15.117L6.11454 15.4131L13.5765 22.8751C13.7401 23.0386 14.0052 23.0386 14.1687 22.8751C14.3322 22.7116 14.3322 22.4465 14.1687 22.283L7.42128 15.5355L23.822 15.5356C24.0533 15.5356 24.2407 15.3481 24.2407 15.1168C24.2407 14.8856 24.0533 14.6981 23.822 14.6981L7.4217 14.6981L14.1687 7.95112Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_455">
+                    <rect width="21.1057" height="21.1057" fill="white" transform="translate(15.1152 30.041) rotate(-135)"/>
+                  </clipPath>
+                </defs>
+              </svg>
+        </button>
+        <button class="next absolute w-[43.978px] h-[43.978px] bg-[#f11f19] right-[66.38px] rounded-[13.8px] p-[7px]" title="Next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                <g clip-path="url(#clip0_1_457)">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2795 7.95112C16.116 7.7876 16.116 7.52249 16.2795 7.35897C16.4431 7.19545 16.7082 7.19545 16.8717 7.35897L24.3337 14.821L24.6298 15.117L24.3337 15.4131L16.8717 22.8751C16.7082 23.0386 16.4431 23.0386 16.2795 22.8751C16.116 22.7116 16.116 22.4465 16.2795 22.283L23.027 15.5355L6.62622 15.5356C6.39497 15.5356 6.20751 15.3481 6.20751 15.1168C6.20751 14.8856 6.39497 14.6981 6.62622 14.6981L23.0265 14.6981L16.2795 7.95112Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_457">
+                    <rect width="21.1057" height="21.1057" fill="white" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 15.333 30.041)"/>
+                  </clipPath>
+                </defs>
+              </svg>
+        </button>
+        
+
+        <div class="dots-container w-[143px] h-[9.46px] absolute bottom-[37.24px] flex gap-[23.638px]">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
         
     </div>
     <!-- andre-francois -->
