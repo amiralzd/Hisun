@@ -5,14 +5,15 @@
 
 
 @font-face {
-    font-family: anjoman;
-    src: url('../font/AnjomanBlack.woff') format('woff'),
-        url('../font/AnjomanExtraBold.woff') format('woff'),
-        url('../font/AnjomanExtraLight.woff') format('woff'),
-        url('../font/AnjomanHeavy.woff') format('woff'),
-        url('../font/AnjomanMedium.woff') format('woff'),
-        url('../font/AnjomanSemiBold.woff') format('woff'),
-        url('../font/AnjomanThin.woff') format('woff');
+    font-family: "anjoman";
+    src: 
+    local("anjoman"),
+        url("../font/AnjomanBlack.woff") format("woff"),
+        url("../font/AnjomanExtraLight.woff") format("woff"),
+        url("../font/AnjomanHeavy.woff") format("woff"),
+        url("../font/AnjomanMedium.woff") format("woff"),
+        url("../font/AnjomanSemiBold.woff") format("woff"),
+        url("../font/AnjomanThin.woff") format("woff");
 }
 
 body{
@@ -265,13 +266,13 @@ body{
 
 /* css for New-arrival slide */
 
-*,
+/* *,
 ::before,
 ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 #cCarousel {
   position: relative;
@@ -294,11 +295,11 @@ body{
   cursor: pointer;
 }
 
-#cCarousel #prev {
+#cCarousel #prevv {
   left: 0px;
 }
 
-#cCarousel #next {
+#cCarousel #nextt {
   right: 0px;
 }
 
@@ -452,3 +453,13 @@ body{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     backdrop-filter: blur(2px);
 }
+
+
+
+
+
+
+
+/* for rectangle */
+
+

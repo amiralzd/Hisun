@@ -9,6 +9,9 @@
     
     <link rel="stylesheet" href="dist/output.css">
     <link rel="stylesheet" href="src/input.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css'>
     <script src="https://kit.fontawesome.com/cb5095bf42.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -189,7 +192,7 @@
 
 
     <!-- Navbar -->
-    <nav class=" sticky top-0 z-[2]">
+    <nav class="sticky top-0 z-[5]">
         <div class="w-[1513px] h-[62px] m-auto bg-[#fff] pr-[40px] pl-[40px] pt-[10px] pb-[10px] border-t-[2px] border-solid border-red-600 navbarBoxshadow flex justify-center items-center gap-[200px] max-sm:w-full max-sm:h-[82px] max-sm:flex max-sm:justify-between max-sm:items-center max-sm:pt-[25px] max-sm:pb-[25px] max-sm:pr-[20px] max-sm:pl-[20px] max-sm:gap-0 max-sm:border-none">
             <!-- responsive -->
     
@@ -380,6 +383,7 @@
 
 
     <!-- New-arrival --> <!-- responsive | New-arrival --> 
+
     <div class="w-[1351px] h-[453px] m-auto mb-[122.77px] pt-[17.67px] max-sm:w-[390px] max-sm:h-[450px]">
         <div class="w-[181.77px] h-[37px] mr-[36.74px] ml-[13.23px] gap-[13.23px] flex mb-[32px]">
             <div class="w-[6.54px] h-[37px] bg-text-newArrival rounded-[10.904px] max-sm:w-[4px] max-sm:h-[23px]"></div>
@@ -389,12 +393,12 @@
         
         <section>
             <div id="cCarousel">
-              <div class="arrow" id="prev">
+              <div class="arrow" id="prevv">
                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
                     <path d="M15.9043 7.53592L1.72952 7.53592M7.18136 14.0781L1.41016 8.30692C0.984343 7.88111 0.984343 7.19073 1.41016 6.76491L7.18136 0.993712" stroke="#F11F19" stroke-width="2" stroke-linecap="round"/>
                   </svg>
               </div>
-              <div class="arrow" id="next">
+              <div class="arrow" id="nextt">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
                     <path d="M1.69922 7.53635H15.874M10.4222 0.994141L16.1934 6.76534C16.6192 7.19116 16.6192 7.88154 16.1934 8.30735L10.4222 14.0786" stroke="#F11F19" stroke-width="2" stroke-linecap="round"/>
                   </svg>
@@ -446,13 +450,13 @@
         
         
         <div class="slides fade">
-            <div class="w-[717px] h-[64px] bg-[#f11f19] absolute right-[397.83px] top-[170px] p-[10px] andre-francois-titr-bg text-[#fff] text-[32px] not-italic font-semibold leading-normal"><p>خلاقیت مخصوص خانه‌ی شما، با لوازم خانگی هایسان.</p></div>
             <img src="img/kitchen.png" alt="">
         </div>
         <div class="slides fade">
             <img src='img/kitchen.png' alt=''>
         </div>
         <div class="slides fade">
+            <div class="w-[717px] h-[64px] bg-[#f11f19] absolute right-[397.83px] top-[170px] p-[10px] andre-francois-titr-bg text-[#fff] text-[32px] not-italic font-semibold leading-normal"><p>خلاقیت مخصوص خانه‌ی شما، با لوازم خانگی هایسان.</p></div>
             <img src='img/kitchen.png' alt=''>
         </div>
         <div class="slides fade">
@@ -498,31 +502,7 @@
     <!-- andre-francois -->
 
 
-    <!-- key-points | responsive -->
-    <!-- <div class="sm:hidden w-[95%] h-[90px] mb-[58px] flex m-auto">
-        <div class="w-[122px] h-[90px] rounded-[24px] bg-[#fff] ml-[11px]">
-            <div class="w-[27px] h-[27px] bg-[#f11f19] mb-[5px] rounded-[8px] m-auto mt-[10px]">
-                
-            </div>
-            <div class="w-[82px] h-[11px] m-auto text-[#282828] text-[8px] font-semibold not-italic leading-normal text-center"><h1>قطعات با کیفیت و با دوام</h1></div>
-            <div class="w-[82px] h-[22px] m-auto mt-[8px] text-[#f11f19] text-[8px] font-semibold not-italic leading-normal text-center"><h1>استفاده از قطعات با کیفیت با دوام بالا </h1></div>
-        </div>
-        <div class="w-[122px] h-[90px] rounded-[24px] bg-[#fff] ml-[13px]">
-            <div class="w-[27px] h-[27px] bg-[#f11f19] rounded-[8px] m-auto mt-[10px] mb-[5px]">
-                
-            </div>
-            <div class="w-[68px] h-[11px] m-auto text-[#282828] text-[8px] font-semibold not-italic leading-normal text-center"><h1>خدمات پس از فروش<h1></div>
-            <div class="w-[90px] h-[22px] m-auto mt-[8px] text-[#f11f19] text-[8px] font-semibold not-italic leading-normal text-center"><h1>آماده پاسخگویی به سوالات شما در بخش نصب</h1></div>
-        </div>
-        <div class="w-[122px] h-[90px] rounded-[24px] bg-[#fff]">
-            <div class="w-[27px] h-[27px] bg-[#f11f19] rounded-[8px] m-auto mt-[10px] mb-[5px] relative">
-                
-            </div>
-            <div class="w-[37px] h-[11px] m-auto text-[#282828] text-[8px] font-semibold not-italic leading-normal text-center"><h1>ضمانت کالا</h1></div>
-            <div class="w-[60px] h-[11px] m-auto mt-[8px] text-[#f11f19] text-[8px] font-semibold not-italic leading-normal text-center"><h1>ضمانت اصالت کالا</h1></div>
-        </div>
-    </div> -->
-    <!-- key-points | responsive -->
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
 
 
 
@@ -574,19 +554,7 @@
     </div>
     <!-- key-points -->
 
-    <!-- responsive | About Hisun -->
-    <!-- <div class="sm:hidden w-[95%] h-[176px] m-auto mb-[69px]">
-        <div class="w-[80%] h-[176px] rounded-[12px] responsive-about-hisun-img relative mr-[25px]">
-            <div class="w-[173px] h-[98px] absolute top-[39px] right-[150px] rounded-[12px] bg-[#f7f7f7] pr-[18px]">
-                <div class="w-[71px] h-[24px] mt-[10px] text-[#282828] text-[12px] not-italic font-semibold leading-normal"><h1>درباره هایسان</h1></div>
-                <div class="w-[80%] h-[20px] text-[#8b8b8b] text-[7px] not-italic font-semibold leading-[10px] mb-[11px]"><h1>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده این لورم اپیسوم هست.</h1></div>
-                <a href="#" class="w-[80px] h-[14.827px] relative">
-                    <div class="w-[25px] h-[5px] absolute right-[36px] top-[4.9135px] text-[#fff] text-[4px] not-italic font-extrabold leading-normal text-center"><h1>بیشتر بخوانید</h1></div></a>
-            </div>
-            <img class="w-full h-full z-[-1]" src="img/vincent-erhart1.png" alt="">
-        </div>
-    </div> -->
-    <!-- responsive | About Hisun -->
+    <!-- --------------------------------------------------------------------------------------------------------------- -->
 
     <!-- About-Hisun -->
     <div class="w-[1409px] h-[526px m-auto mb-[143px] max-sm:w-[95%] max-sm:h-[176px] max-sm:m-auto max-sm:mb-[69px] relative">
@@ -603,24 +571,7 @@
     </div>
     <!-- About-Hisun -->
 
-    <!-- Erik-Mclean | responsive -->
-    <!-- <div class="sm:hidden w-[95%] m-auto h-[102px] mb-[100px] flex justify-between">
-        <div class="w-[170px] h-[102px] rounded-[24px] relative">
-            <div class="w-[127px] h-[30px] bg-[#f4e8dd] absolute mt-[29px] mr-[21.5px] rounded-[8px] p-[10px] text-[#ef3939] text-[10px] not-italic font-semibold leading-normal text-center"><h1>دلت گرم، مثل گاز هایسان!</h1></div>
-            <a href="">
-                
-            </a>
-            <img class="w-full h-full rounded-[24px]" src="img/ghablame.png" alt="">
-        </div>
-        <div class="w-[170px] h-[102px] rounded-[24px] relative">
-            <div class="w-[127px] h-[30px] bg-[#f4e8dd] absolute mt-[29px] mr-[21.5px] rounded-[8px] p-[10px] text-[#ef3939] text-[10px] not-italic font-semibold leading-normal text-center"><h1>دلت گرم، مثل گاز هایسان!</h1></div>
-            <a href="" class="absolute top-[70px] right-[14px]">
-                
-            </a>
-            <img class="w-full h-full rounded-[24px]" src="img/hood.png" alt="">
-        </div>
-    </div> -->
-    <!-- Erik-Mclean | responsive -->
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
 
     <!-- Erik-Mclean -->
     <div class="w-[1409px] h-[344px] m-auto flex gap-[97px] mb-[143px] max-sm:w-[95%] max-sm:m-auto max-sm:h-[102px] max-sm:mb-[100px] max-sm:flex max-sm:justify-between max-sm:gap-[20px]">
@@ -662,49 +613,17 @@
     <!-- Erik-Mclean -->
 
 
-    <!-- Rectangle 1 | responsive -->
-    <div class="sm:hidden w-full h-[286px] responsive-Rectangle1-bg mb-[50px] pt-[10px] relative">
-        <div class="w-[132px] h-[37px] text-[#282828] text-[10px] not-italic font-semibold leading-[36.527px] tracking-[0.2px] relative text-center m-auto">
-            <h1>محبوب‌ترین محصولات هایسان</h1>
-            <div class="w-full h-[3px] bg-[#f11f19] absolute bottom-0"></div>
-        </div>
-        <div class="w-full h-[148px] bg-emerald-600 mt-[34px]"></div>
-        <a href="" class="w-[52px] h-[14.827px] top-[258px] right-[160px] absolute bg-[#f11f19] rounded-[4px] flex justify-center responsive-Rectangle1-bxshadow">
-        <div class="w-[23px] h-[5px] m-auto text-[#fff] text-center text-[4px] not-italic font-extrabold leading-normal"><h1>مشاهده همه</h1></div>    
-        </a>
-    </div>
-    <!-- Rectangle 1 | responsive -->
+    <!-- ---------------------------------------------------------------------------------------------- -->
 
     <!-- Rectangle 1 -->
     <div class="w-[1513px] h-[858px] Rectangle1-style bg-[#F9F9F9] pt-[61px] mb-[112px] max-sm:hidden m-auto">
         <div class="w-[316px] h-[37px] m-auto mb-[11px] text-[#282828] text-center font-semibold leading-[36.527px] not-italic tracking-[0.48px] text-[24px]"><h1>محبوب‌ترین محصولات هایسان</h1></div>
         <div class="w-[316px] h-[5px] m-auto bg-[#F11F19] mb-[127px]"></div>
-        <div class="w-[1422px] h-[333px] m-auto grid grid-cols-4 gap-[30px] mb-[34px]">
-            <a href="" class="Rectangle1-style-gridbox">
-                <img src="img/beazy-i3NR1cnwqUo-unsplash 1.png" alt="">
-            </a>
-            <a href="" class="Rectangle1-style-gridbox">
-                <img src="img/nadin-mario-AJ_63rr-qCg-unsplash (1) 1.png" alt="">
-            </a>
-            <a href="" class="Rectangle1-style-gridbox">
-                <img src="img/beazy-i3NR1cnwqUo-unsplash 1.png" alt="">
-            </a>
-            <a href="" class="Rectangle1-style-gridbox">
-                <img src="img/nadin-mario-AJ_63rr-qCg-unsplash (1) 1.png" alt="">
-            </a>
-        </div>
-        <div class="w-[1196px] h-[26px] m-auto text-[#111010] text-center text-[14px] not-italic font-semibold leading-[26px] capitalize flex">
-            <div class="w-[158px] h-[26px] ml-[241px]"><h1>فر دو در مخصوص پخت و پز</h1></div>
-            <div class="w-[114px] h-[26px] ml-[246px]"><h1>گاز سه شعله رایسان</h1></div>
-            <div class="w-[91px] h-[26px] ml-[260px]"><h1>شیرآلات صنعتی</h1></div>
-            <div class="w-[56px] h-[26px]"><h1>شیر حمام</h1></div>
-        </div>
-        <div class="w-[1176px] h-[26px] m-auto text-[#B4B4B4] text-center text-[14px] not-italic font-semibold leading-[26px] capitalize flex mb-[66px]">
-            <div class="w-[63px] h-[26px] mr-[40px]"><h1>نوع متریال</h1></div>
-            <div class="w-[133px] h-[26px] mr-[280px]"><h1>نوع متریال مصرف شده</h1></div>
-            <div class="w-[133px] h-[26px] mr-[215px]"><h1>نوع متریال مصرف شده</h1></div>
-            <div class="w-[110px] h-[26px] mr-[210px] ml-[-50px]"><h1>متریال مصرف شده</h1></div>
-        </div>
+
+        
+        g
+        
+        
         <a href="" class="w-[180px] h-[52px] bg-[#F11F19] rounded-[10px] m-auto Rectangle1-style-button flex justify-center items-center">
             <div class="w-[80px] h-[20px] text-[#fff] text-center text-[14px] not-italic font-extrabold leading-normal uppercase"><h1>مشاهده همه</h1></div>
         </a>
@@ -712,29 +631,8 @@
     <!-- Rectangle 1 -->
 
 
-
-    <!-- Rectangle 12 | responsive -->
-    <!-- <div class="sm:hidden w-full h-[199px] mb-[24px] pt-[15px] responsive-rectangle-bg">
-        <div class="w-[90%] h-[14px] m-auto flex justify-between mb-[37px]">
-            <div class="w-[101px] h-[14px] text-[#282828] text-[10px] not-italic font-semibold leading-normal tracking-[0.25px]"><h1>آخـرین مقالـات <span class="text-[#f11f19]">هایسان</span></h1></div>
-            <a href="" class="w-[64px] h-[14px] text-[#f11f19] text-[10px] not-italic font-semibold leading-normal tracking-[0.25px] text-center"><h1>مشاهده بیشتر</h1></a>
-        </div>
-        <div class="w-[90%] h-[94px] m-auto grid grid-cols-4 gap-[10px]">
-            <a href="#" class="rounded-t-[42px] rounded-b-[14px]">
-                <img class="w-full h-full" src="img/latrach-med-jamil-Eb6hMEhGlKY-unsplash 2.png" alt="">
-            </a>
-            <a href="#" class="rounded-t-[42px] rounded-b-[14px]">
-                <img class="w-full h-full" src="img/latrach-med-jamil-Eb6hMEhGlKY-unsplash 2.png" alt="">
-            </a>
-            <a href="#" class="rounded-t-[42px] rounded-b-[14px]">
-                <img class="w-full h-full" src="img/latrach-med-jamil-Eb6hMEhGlKY-unsplash 2.png" alt="">
-            </a>
-            <a href="#" class="rounded-t-[42px] rounded-b-[14px]">
-                <img class="w-full h-full" src="img/latrach-med-jamil-Eb6hMEhGlKY-unsplash 2.png" alt="">
-            </a>
-        </div>
-    </div> -->
-    <!-- Rectangle 12 | responsive -->
+<!-- ------------------------------------------------------------------------------------------------- -->
+    
 
     <!-- Rectangle 12 -->
     <div class="w-[1432px] h-[500px] m-auto relative Rectangle12-style pt-[25px] mb-[83px] max-sm:w-full max-sm:h-[150px] max-sm:mb-[24px] max-sm:pt-[15px]">
@@ -959,5 +857,7 @@
 
     <script src="js/script.js"></script>
     <script src="js/script2.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js'></script>
 </body>
 </html>

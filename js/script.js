@@ -69,6 +69,15 @@ prevSlide.addEventListener("click", function () {
 });
 
 
+
+
+
+
+
+
+
+
+
 // for andre
 
 let currentSlide = 0;
@@ -112,3 +121,182 @@ dots.forEach((dot, i) => {
     currentSlide = i
   })
 })
+
+
+
+
+
+
+
+
+
+
+
+
+// for
+
+var container = document.getElementById('container')
+var sliderbeazy = document.getElementById('sliderbeazy');
+var slidebeazy = document.getElementsByClassName('slidebeazy').length;
+var buttons = document.getElementsByClassName('btnn');
+
+
+var currentPosition = 0;
+var currentMargin = 0;
+var slidesPerPage = 0;
+var slidesCount = slidebeazy - slidesPerPage;
+var containerWidth = container.offsetWidth;
+var prevKeyActive = false;
+var nextKeyActive = true;
+
+window.addEventListener("resize", checkWidth);
+
+function checkWidth() {
+    containerWidth = container.offsetWidth;
+    setParams(containerWidth);
+}
+
+function setParams(w) {
+    if (w < 551) {
+        slidesPerPage = 1;
+    } else {
+        if (w < 901) {
+            slidesPerPage = 2;
+        } else {
+            if (w < 1101) {
+                slidesPerPage = 3;
+            } else {
+                slidesPerPage = 4;
+            }
+        }
+    }
+    slidesCount = slidebeazy - slidesPerPage;
+    if (currentPosition > slidesCount) {
+        currentPosition -= slidesPerPage;
+    };
+    currentMargin = - currentPosition * (100 / slidesPerPage);
+    sliderbeazy.style.marginLeft = currentMargin + '%';
+    if (currentPosition > 0) {
+        buttons[0].classList.remove('inactive');
+    }
+    if (currentPosition < slidesCount) {
+        buttons[1].classList.remove('inactive');
+    }
+    if (currentPosition >= slidesCount) {
+        buttons[1].classList.add('inactive');
+    }
+}
+
+setParams();
+
+function slideRightt() {
+    if (currentPosition != 0) {
+        sliderbeazy.style.marginLeft = currentMargin + (100 / slidesPerPage) + '%';
+        currentMargin += (100 / slidesPerPage);
+        currentPosition--;
+    };
+    if (currentPosition === 0) {
+        buttons[0].classList.add('inactive');
+    }
+    if (currentPosition < slidesCount) {
+        buttons[1].classList.remove('inactive');
+    }
+};
+
+function slideLeftt() {
+    if (currentPosition != slidesCount) {
+        sliderbeazy.style.marginLeft = currentMargin - (100 / slidesPerPage) + '%';
+        currentMargin -= (100 / slidesPerPage);
+        currentPosition++;
+    };
+    if (currentPosition == slidesCount) {
+        buttons[1].classList.add('inactive');
+    }
+    if (currentPosition > 0) {
+        buttons[0].classList.remove('inactive');
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+// New-arrival slide
+
+
+const prevv = document.querySelector("#prevv");
+const nextt = document.querySelector("#nextt");
+
+let carouselVp = document.querySelector("#carousel-vp");
+
+let cCarouselInner = document.querySelector("#cCarousel-inner");
+let carouselInnerWidth = cCarouselInner.getBoundingClientRect().width;
+
+let leftValue = 0;
+
+// Variable used to set the carousel movement value (card's width + gap)
+const totalMovementSize =
+  parseFloat(
+    document.querySelector(".cCarousel-item").getBoundingClientRect().width,
+    10
+  ) +
+  parseFloat(
+    window.getComputedStyle(cCarouselInner).getPropertyValue("gap"),
+    10
+  );
+
+prevv.addEventListener("click", () => {
+  if (!leftValue == 0) {
+    leftValue -= -totalMovementSize;
+    cCarouselInner.style.left = leftValue + "px";
+  }
+});
+
+nextt.addEventListener("click", () => {
+  const carouselVpWidth = carouselVp.getBoundingClientRect().width;
+  if (carouselInnerWidth - Math.abs(leftValue) > carouselVpWidth) {
+    leftValue -= totalMovementSize;
+    cCarouselInner.style.left = leftValue + "px";
+  }
+});
+
+const mediaQuery510 = window.matchMedia("(max-width: 510px)");
+const mediaQuery770 = window.matchMedia("(max-width: 770px)");
+
+mediaQuery510.addEventListener("change", mediaManagement);
+mediaQuery770.addEventListener("change", mediaManagement);
+
+let oldViewportWidth = window.innerWidth;
+
+function mediaManagement() {
+  const newViewportWidth = window.innerWidth;
+
+  if (leftValue <= -totalMovementSize && oldViewportWidth < newViewportWidth) {
+    leftValue += totalMovementSize;
+    cCarouselInner.style.left = leftValue + "px";
+    oldViewportWidth = newViewportWidth;
+  } else if (
+    leftValue <= -totalMovementSize &&
+    oldViewportWidth > newViewportWidth
+  ) {
+    leftValue -= totalMovementSize;
+    cCarouselInner.style.left = leftValue + "px";
+    oldViewportWidth = newViewportWidth;
+  }
+}
+
+
+
+
+
+
+
+
+// for rectangle
+
