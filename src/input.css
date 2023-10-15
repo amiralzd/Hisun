@@ -18,66 +18,6 @@
 
 
 
-/* @font-face {
-    font-family: "anjoman";
-    src:url("../font/AnjomanBlack.woff") format("woff"),
-        url("../font/AnjomanExtraLight.woff") format("woff"),
-        url("../font/AnjomanHeavy.woff") format("woff"),
-        url("../font/AnjomanMedium.woff") format("woff"),
-        url("../font/AnjomanSemiBold.woff") format("woff"),
-        url("../font/AnjomanThin.woff") format("woff");
-} */
-
-/* @font-face {
-    font-family: anjomanSemiBold;
-    src:url("../font/AnjomanSemiBold.woff") format("woff");
-    font-weight: 600;
-}
-@font-face {
-    font-family: anjomanExtraBold;
-    src:url("../font/AnjomanExtraBold.woff") format("woff");
-    font-weight: 800;
-}
-@font-face {
-    font-family: anjomanExtraLight;
-    src:url("../font/AnjomanExtraLight.woff") format("woff");
-    font-weight: 200;
-}
-@font-face {
-    font-family: anjomanHeavy;
-    src:url("../font/AnjomanHeavy.woff") format("woff");
-    font-weight: 700;
-}
-@font-face {
-    font-family: anjomanBlack;
-    src:url("../font/AnjomanBlack.woff") format("woff");
-    font-weight: 900;
-}
-@font-face {
-    font-family: anjomanThin;
-    src:url("../font/AnjomanThin.woff") format("woff");
-    font-weight: 100;
-}
-
-h1{
-    font-family: anjomanSemiBold;
-    font-family: anjomanExtraBold;
-    font-family: anjomanExtraLight;
-    font-family: anjomanHeavy;
-    font-family: anjomanBlack;
-    font-family: anjomanThin;
-}
-
-p{
-    font-family: anjomanSemiBold;
-    font-family: anjomanExtraBold;
-    font-family: anjomanExtraLight;
-    font-family: anjomanHeavy;
-    font-family: anjomanBlack;
-    font-family: anjomanThin;
-} */
-
-
 body{
     font-family: "anjoman", sans-serif;
     background: #DFD3C8;
