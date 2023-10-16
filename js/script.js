@@ -290,13 +290,3 @@ function mediaManagement() {
     oldViewportWidth = newViewportWidth;
   }
 }
-
-
-
-
-
-
-
-
-// for rectangle
-

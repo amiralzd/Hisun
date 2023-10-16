@@ -21,6 +21,7 @@
 body{
     font-family: "anjoman", sans-serif;
     background: #DFD3C8;
+    outline: none;
 }
 
 .searchBarboxShadow{
@@ -163,7 +164,7 @@ body{
 
 #email{
     width: 348px;
-    outline: none;
+    /* outline: none; */
 }
 
 .Footer-style-bg{
@@ -211,11 +212,6 @@ body{
 
 /* css for big banner slide */
 
-  body {
-    height: 100vh;
-    display: grid;
-    place-items: center;
-  }
   
   
   .slide {
@@ -476,4 +472,8 @@ body{
   font-weight: 600;
   line-height: 26px; /* 185.714% */
   text-transform: capitalize;
+}
+
+.bg-line-footer{
+  background: linear-gradient(270deg, rgba(255, 251, 250, 0.00) 0%, #FFFBFA 49.6%, rgba(255, 251, 250, 0.00) 99.2%);
 }
