@@ -46,4 +46,22 @@ body{
   }
   .box-scale-menubar:hover{
     scale: 1.1;
-  }
+}
+
+.burgerMenu-style{
+    opacity: 2;
+    background-color: #fff;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(5px);
+    position: absolute;
+}
+
+.card-icon-style{
+    fill: #F9F3F1;
+    box-shadow: 10px 0px 95px 0px rgba(251, 84, 29, 0.15) inset;
+    backdrop-filter: blur(15px);
+}
+
+.burgerMenu-show{
+    display: block !important;
+}
