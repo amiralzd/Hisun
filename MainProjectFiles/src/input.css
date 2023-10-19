@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "anjoman";
+    src: url("../font/AnjomanBlack.woff") format("woff"),
+         url("../font/AnjomanExtraLight.woff") format("woff"),
+         url("../font/AnjomanHeavy.woff") format("woff"),
+         url("../font/AnjomanMedium.woff") format("woff"),
+         url("../font/AnjomanSemiBold.woff") format("woff"),
+         url("../font/AnjomanThin.woff") format("woff");
+    font-display: swap; /* Ensure fallback fonts are used until custom fonts are loaded */
+}
+
+
+
+body{
+    font-family: "anjoman", sans-serif;
+    background: #DFD3C8;
+}
+
+.style-search-header{
+    border-radius: 10px;
+    background: #FFFBFA;
+    box-shadow: 0px 2.5px 5px 0px rgba(241, 31, 25, 0.25) inset;
+}
+
+.button-search-header{
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 5px 0px rgba(241, 31, 25, 0.25) inset;
+}
+
+.card-nav-style{
+    background: #FFF;
+    box-shadow: 0px 5px 10px 0px rgba(241, 31, 25, 0.25);
+}
+
+.show-Products{
+    display: block!important;
+  }
+  .box-scale-menubar{
+    transition: all 0.5s ease;
+  
+  }
+  .box-scale-menubar:hover{
+    scale: 1.1;
+  }
