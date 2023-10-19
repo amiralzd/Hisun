@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joseph Odunsi" />
+    <meta name="description" content="Create an image slider with HTML, CSS and JavaScript" />
+    <meta name="keywords" content="image slider, carousel, codepen, css, js" />
+    
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../src/input.css">
+    <link rel='stylesheet' href='https://unpkg.com/flowbite@1.4.0/dist/flowbite.min.css'>
+    <script src='https://unpkg.com/flowbite@1.4.0/dist/flowbite.js'></script>
+    <script src="https://kit.fontawesome.com/cb5095bf42.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <!-- header -->
+    <header class="w-[1424px] h-[54px]] mt-[49px] m-auto mb-[32px] flex justify-center items-center max-sm:hidden">
+        <div class="w-[1208px] h-[54px]] justify-center items-center gap-[200px] flex">
+            <div class="w-[849px] h-[54px]] flex">
+                <div class="w-[60px] h-[59.961px] mr-[-20px]]">
+                    <img src="../img/6 1.png" alt="">
+                </div>
+
+                <div class="w-[130px] h-[40px]] mr-[21px] mt-[10px] mb-[9.96px] ml-[206px]">
+                    <img src="../img/logo (4) 1.png" alt="">
+                </div>
+
+                <div class="w-[450px] h-[54px] bg-[#FFFBFA] ml-[30px] rounded-[10px] justify-center items-center gap-[161px] searchBarboxShadow flex">
+                    <div class="w-[230px] h-[34px] mt-[10px] mb-[10px] mr-[10px]] justify-center items-center gap-[10px] flex pr-[10px]">
+                        <button class="w-[54px] h-[34px] bg-[#fff] pt-[5px] pb-[5px] pr-[15px] pl-[15px] rounded-[5px] searchbarboxbuttonshadow">
+                            <div class="w-[24px] h-[24px] bg-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M7 10L12 15L17 10" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </div>
+                        </button>
+                        <input type="search"  class="w-[166px] h-[25px] bg-transparent text-[#B4B4B4] text-[14px] not-italic font-semibold leading-normal outline-none" placeholder="جستجوی محصولات...">
+                    </div>
+                    <div class="w-[44px] h-[44px] bg-[#F11F19] rounded-[10px] p-[10px] ml-[5px]">
+                        <div class="w-[24px] h-[24px]">
+                            <img src="../img/search-normal.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[129px] h-[54px] flex">
+                <div class="w-[179px] h-[25px] mt-[14px] mb-[15px] mr-[-133px] text-[#282828] text-[14px] font-semibold leading-normal ml-[29px]"><h1>سبد خرید خالی می‌باشد</h1></div>
+                <div class="w-[54px] h-[54px] bg-[#fff] rounded-full p-[15px] relative border-solid border-[1px] border-[#B4B4B4]">
+                    <a href="" class="w-[24px] h-[24px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7.5 7.66952V6.69952C7.5 4.44952 9.31 2.23952 11.56 2.02952C14.24 1.76952 16.5 3.87952 16.5 6.50952V7.88952" stroke="#F11F19" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.99983 22H14.9998C19.0198 22 19.7398 20.39 19.9498 18.43L20.6998 12.43C20.9698 9.99 20.2698 8 15.9998 8H7.99983C3.72983 8 3.02983 9.99 3.29983 12.43L4.04983 18.43C4.25983 20.39 4.97983 22 8.99983 22Z" stroke="#F11F19" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.4955 12H15.5045" stroke="#F11F19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.49451 12H8.50349" stroke="#F11F19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="w-[15px] h-[15px] bg-[#F11F19] absolute rounded-full top-[-1px] left-[40px]"><h1></h1></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="w-[196px] h-[54px] justify-center items-center gap-[20px] flex">
+            <div class="w-[1px] h-[35px] bg-[#000] m-auto"></div>
+            <div class="w-[54px] h-[54px] rounded-full">
+                <img class="w-[54px] h-[54px] rounded-full" src="../img/default-profile-account-unknown-icon-black-silhouette-free-vector 1.png" alt="">
+            </div>
+            <div class="w-[102px] h-[54px] pt-[15px] pb-[14px] pl-[17px]">
+                <div class="w-[87px] h-[25px] mr-[-1px] text-[18px] text-[#282828] font-semibold leading-normal"><h1>نازنین پرماه</h1></div>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+
+
+    <!-- button |  burger Menu -->
+    <div id="burger-Menu" class="w-full h-[800px] bg-burger-menu absolute z-[5] hidden">
+        <div class="w-[276px] h-[497px] pt-[5px] burger-menu-screen-style">
+            <div onclick="hideBurgerMenu()" class="w-[23px] h-[23px] mr-[12px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18.3 5.71001C18.2075 5.61731 18.0976 5.54376 17.9766 5.49358C17.8556 5.4434 17.7259 5.41757 17.595 5.41757C17.464 5.41757 17.3343 5.4434 17.2134 5.49358C17.0924 5.54376 16.9825 5.61731 16.89 5.71001L12 10.59L7.10998 5.70001C7.0174 5.60743 6.90749 5.53399 6.78652 5.48388C6.66556 5.43378 6.53591 5.40799 6.40498 5.40799C6.27405 5.40799 6.1444 5.43378 6.02344 5.48388C5.90247 5.53399 5.79256 5.60743 5.69998 5.70001C5.6074 5.79259 5.53396 5.9025 5.48385 6.02347C5.43375 6.14443 5.40796 6.27408 5.40796 6.40501C5.40796 6.53594 5.43375 6.66559 5.48385 6.78655C5.53396 6.90752 5.6074 7.01743 5.69998 7.11001L10.59 12L5.69998 16.89C5.6074 16.9826 5.53396 17.0925 5.48385 17.2135C5.43375 17.3344 5.40796 17.4641 5.40796 17.595C5.40796 17.7259 5.43375 17.8556 5.48385 17.9766C5.53396 18.0975 5.6074 18.2074 5.69998 18.3C5.79256 18.3926 5.90247 18.466 6.02344 18.5161C6.1444 18.5662 6.27405 18.592 6.40498 18.592C6.53591 18.592 6.66556 18.5662 6.78652 18.5161C6.90749 18.466 7.0174 18.3926 7.10998 18.3L12 13.41L16.89 18.3C16.9826 18.3926 17.0925 18.466 17.2134 18.5161C17.3344 18.5662 17.464 18.592 17.595 18.592C17.7259 18.592 17.8556 18.5662 17.9765 18.5161C18.0975 18.466 18.2074 18.3926 18.3 18.3C18.3926 18.2074 18.466 18.0975 18.5161 17.9766C18.5662 17.8556 18.592 17.7259 18.592 17.595C18.592 17.4641 18.5662 17.3344 18.5161 17.2135C18.466 17.0925 18.3926 16.9826 18.3 16.89L13.41 12L18.3 7.11001C18.68 6.73001 18.68 6.09001 18.3 5.71001Z" fill="#F11F19"/>
+                </svg>
+            </div>
+            <div class="w-[176px] h-[54px] mt-[17px] mr-[16px] flex gap-[20px]">
+                <div class="w-[54px] h-[54px]">
+                    <img class="w-[54px] h-[54px] rounded-full" src="../img/default-profile-account-unknown-icon-black-silhouette-free-vector 1.png" alt="">
+                </div>
+                <div class="w-[102px] h-[54px] pt-[14px] pl-[17px] pb-[15px]">
+                    <div class="w-[85px] h-[25px] text-[#282828] text-[18px] font-medium not-italic leading-normal"><p>نازنین پرماه</p></div>
+                </div>
+            </div>
+
+            <button onclick="MahsolatIcon()" class="w-[276px] h-[54px] mt-[41px] flex">
+                <div class="w-[54px] h-[54px] mr-[16px] p-[15px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3.01001 11.22V15.71C3.01001 20.2 4.81001 22 9.30001 22H14.69C19.18 22 20.98 20.2 20.98 15.71V11.22" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12C13.83 12 15.18 10.51 15 8.68L14.34 2H9.66999L8.99999 8.68C8.81999 10.51 10.17 12 12 12Z" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.31 12C20.33 12 21.81 10.36 21.61 8.35L21.33 5.6C20.97 3 19.97 2 17.35 2H14.3L15 9.01C15.17 10.66 16.66 12 18.31 12Z" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.63988 12C7.28988 12 8.77988 10.66 8.93988 9.01L9.15988 6.8L9.63988 2H6.58988C3.96988 2 2.96988 3 2.60988 5.6L2.33988 8.35C2.13988 10.36 3.61988 12 5.63988 12Z" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 17C10.33 17 9.5 17.83 9.5 19.5V22H14.5V19.5C14.5 17.83 13.67 17 12 17Z" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+                <div class="w-[64px] h-[22px] mt-[15px] text-[#282828] text-[16px] font-medium not-italic leading-normal ml-[6px]"><p>محصولات</p></div>
+                <div class="w-[20px] h-[20px] mt-[18px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5.83325 8.33334L9.99992 11.6667L14.1666 8.33334" stroke="#282828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+            </button>
+
+            <div id="mahsolat-icon" class="absolute hidden bg-[#DFD3C8] w-[276px] h-[168px] z-[5] pr-[74px] text-[#282828] text-[16px] font-medium not-italic leading-normal">
+                <div class="w-[75px] h-[22px] mb-[25px]">
+                    <a href="" ><p>لوازم خانگی</p></a>
+                </div>
+                <div class="w-[91px] h-[22px] mb-[25px]">
+                    <a href=""><p>لوازم گرمایشی</p></a>
+                </div>
+                <div class="w-[96px] h-[22px] mb-[25px]">
+                    <a href=""><p>لوازم سرمایشی</p></a>
+                </div>
+                <div class="w-[30px] h-[22px]">
+                    <a href=""><p>سایر</p></a>
+                </div>
+            </div>
+
+            <div class="w-full h-[1px] bg-[#f11f19] opacity-[0.2]"></div>
+
+            <a href="" class="w-[276px] h-[54px] flex">
+                <div class="w-[54px] h-[54px] mr-[16px] p-[15px] ml-[5px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M7.5 7.67001V6.70001C7.5 4.45001 9.31 2.24001 11.56 2.03001C14.24 1.77001 16.5 3.88001 16.5 6.51001V7.89001" stroke="#F11F19" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.00007 22H15.0001C19.0201 22 19.7401 20.39 19.9501 18.43L20.7001 12.43C20.9701 9.99 20.2701 8 16.0001 8H8.00007C3.73007 8 3.03007 9.99 3.30007 12.43L4.05007 18.43C4.26007 20.39 4.98007 22 9.00007 22Z" stroke="#F11F19" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.4955 12H15.5045" stroke="#F11F19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.49451 12H8.50349" stroke="#F11F19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+                <div class="w-[65px] h-[22px] mt-[15px] text-[#282828] text-[16px] font-medium not-italic leading-normal"><p>سبد خرید</p></div>
+            </a>
+            <div class="w-full h-[1px] bg-[#f11f19] opacity-[0.2]"></div>
+
+            <a href="" class="w-[276px] h-[54px] flex">
+                <div class="w-[54px] h-[54px] mr-[16px] p-[15px] ml-[5px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M17 18.4301H13L8.54999 21.39C7.88999 21.83 7 21.3601 7 20.5601V18.4301C4 18.4301 2 16.4301 2 13.4301V7.42999C2 4.42999 4 2.42999 7 2.42999H17C20 2.42999 22 4.42999 22 7.42999V13.4301C22 16.4301 20 18.4301 17 18.4301Z" stroke="#F11F19" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.0001 11.36V11.15C12.0001 10.47 12.4201 10.11 12.8401 9.82001C13.2501 9.54001 13.66 9.18002 13.66 8.52002C13.66 7.60002 12.9201 6.85999 12.0001 6.85999C11.0801 6.85999 10.3401 7.60002 10.3401 8.52002" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.9955 13.75H12.0045" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+                <div class="w-[132px] h-[22px] mt-[15px] text-[#282828] text-[16px] font-medium not-italic leading-normal"><p>خدمات پس از فروش</p></div>
+            </a>
+            <div class="w-full h-[1px] bg-[#f11f19] opacity-[0.2]"></div>
+
+            <a href="" class="w-[276px] h-[54px] flex">
+                <div class="w-[54px] h-[54px] mr-[16px] p-[15px] ml-[5px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 8C20.6569 8 22 6.65685 22 5C22 3.34315 20.6569 2 19 2C17.3431 2 16 3.34315 16 5C16 6.65685 17.3431 8 19 8Z" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 13H12" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 17H16" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15V10" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+                <div class="w-[47px] h-[22px] mt-[15px] text-[#282828] text-[16px] font-medium not-italic leading-normal"><p>اعلانات</p></div>
+            </a>
+            <div class="w-full h-[1px] bg-[#f11f19] opacity-[0.2]"></div>
+            <div class="w-[130px] h-[32px] mt-[95px] m-auto flex gap-[10px] justify-center items-center">
+                <div class="w-[88px] h-[19px] text-center text-[#282828] text-[14px] font-extrabold not-italic leading-normal"><p>درباره هایسان</p></div>
+                <div class="w-[32px] h-[32px]">
+                    <img src="../img/6 2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- button |  burger Menu -->
+
+
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-[2]">
+        <div class="w-[1513px] h-[62px] m-auto bg-[#fff] pr-[40px] pl-[40px] pt-[10px] pb-[10px] border-t-[2px] border-solid border-red-600 navbarBoxshadow flex justify-center items-center gap-[200px] max-sm:w-full max-sm:h-[82px] max-sm:flex max-sm:justify-between max-sm:items-center max-sm:pt-[25px] max-sm:pb-[25px] max-sm:pr-[20px] max-sm:pl-[20px] max-sm:gap-0 max-sm:border-none">
+            <!-- responsive -->
+    
+            <button onclick="showburgerMenu()" class="w-[24px] h-[24px] sm:hidden flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path d="M6.5 6H22.5" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M6.5 10H22.5" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M6.5 14H22.5" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M6.5 18H22.5" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+    
+            </button>
+            <div class="w-[113px] h-[32px] flex justify-center items-center gap-[10px] sm:hidden">
+                  <div class="w-[32px] h-[32px]">
+                      <img src="../img/6 1.png" alt="">
+                  </div>
+                  <div class="w-[71px] h-[22px]">
+                      <img src="../img/logo (4) 1.png" alt="">
+                  </div>
+            </div>
+            <div class="w-[20px] h-[20px] sm:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                    <path d="M15.9166 15.4167L18.8333 18.3333M18 9.58332C18 5.21107 14.4555 1.66666 10.0833 1.66666C5.71104 1.66666 2.16663 5.21107 2.16663 9.58332C2.16663 13.9556 5.71104 17.5 10.0833 17.5C14.4555 17.5 18 13.9556 18 9.58332Z" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+            </div>
+    
+            <!-- responsive -->
+    
+            <div class="w-[1042px] h-[27px] mt-[10px] mb-[10px] flex justify-center items-center gap-[50px] max-sm:hidden">
+                <div class="w-[132px] h-[27px] flex justify-center items-center gap-[5px]">
+                    <a href="" class="w-[24px] h-[24px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M12.5 18V15" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.57 2.81985L3.64002 8.36985C2.86002 8.98985 2.36002 10.2998 2.53002 11.2798L3.86002 19.2398C4.10002 20.6598 5.46002 21.8098 6.90002 21.8098H18.1C19.53 21.8098 20.9 20.6498 21.14 19.2398L22.47 11.2798C22.63 10.2998 22.13 8.98985 21.36 8.36985L14.43 2.82985C13.36 1.96985 11.63 1.96985 10.57 2.81985Z" stroke="#F11F19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </a>
+                    <a href="" class="w-[103px] h-[27px] text-[14px] text-[#F11F19] font-semibold leading-normal not-italic"><p>صفحه اصلی</p></a>
+                </div>
+                <div class="w-[140px] h-[27px] flex justify-center items-center gap-[5px]">
+                    <a href="" class="w-[24px] h-[24px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M3.50977 11.2197V15.7097C3.50977 20.1997 5.30977 21.9997 9.79977 21.9997H15.1898C19.6798 21.9997 21.4798 20.1997 21.4798 15.7097V11.2197" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.5 12C14.33 12 15.68 10.51 15.5 8.68L14.84 2H10.17L9.49999 8.68C9.31999 10.51 10.67 12 12.5 12Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.8098 12C20.8298 12 22.3098 10.36 22.1098 8.35L21.8298 5.6C21.4698 3 20.4698 2 17.8498 2H14.7998L15.4998 9.01C15.6698 10.66 17.1598 12 18.8098 12Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.13988 12C7.78988 12 9.27988 10.66 9.43988 9.01L9.65988 6.8L10.1399 2H7.08988C4.46988 2 3.46988 3 3.10988 5.6L2.83988 8.35C2.63988 10.36 4.11988 12 6.13988 12Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.5 17C10.83 17 10 17.83 10 19.5V22H15V19.5C15 17.83 14.17 17 12.5 17Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </a>
+                        <a href="" class="w-[82px] h-[27px] text-[#282828] font-semibold not-italic leading-normal text-[14px]"><h1>محصولات</h1></a>
+                        <button class="w-[24px] h-[24px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <path d="M7.5 10L12.5 14L17.5 10" stroke="#28303F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </button>
+                    </div>
+                <div class="w-[190px] h-[27px] flex justify-center items-center gap-[10px]">
+                    <a href="" class="w-[24px] h-[24px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M17.5 18.4297H13.5L9.04999 21.3897C8.38999 21.8297 7.5 21.3598 7.5 20.5598V18.4297C4.5 18.4297 2.5 16.4297 2.5 13.4297V7.42969C2.5 4.42969 4.5 2.42969 7.5 2.42969H17.5C20.5 2.42969 22.5 4.42969 22.5 7.42969V13.4297C22.5 16.4297 20.5 18.4297 17.5 18.4297Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.4998 11.3604V11.1504C12.4998 10.4704 12.9198 10.1104 13.3398 9.82037C13.7498 9.54037 14.1598 9.18039 14.1598 8.52039C14.1598 7.60039 13.4198 6.86035 12.4998 6.86035C11.5798 6.86035 10.8398 7.60039 10.8398 8.52039" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.4955 13.75H12.5045" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </a>
+                    <a href="" class="w-[168px] h-[14px] text-[#282828] not-italic leading-normal font-semibold text-[14px] mt-[-10px]"><h1>خدمات پس از فروش</h1></a>
+                </div>
+                <div class="w-[124px] h-[27px] flex justify-center items-center gap-[5px]">
+                    <a href="" class="w-[24px] h-[24px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M2.5 22H22.5" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.5 2C14.1 2.64 15.9 2.64 17.5 2V5C15.9 5.64 14.1 5.64 12.5 5V2Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.5 5V8" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.5 8H7.5C5.5 8 4.5 9 4.5 11V22H20.5V11C20.5 9 19.5 8 17.5 8Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.08008 12H19.9201" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.49023 12V22" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linejoin="round"/>
+                            <path d="M12.4902 12V22" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linejoin="round"/>
+                            <path d="M16.4902 12V22" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linejoin="round"/>
+                          </svg>
+                    </a>
+                    <a href="" class="w-[95px] h-[27px] text-[#282828] leading-normal font-semibold not-italic text-[14px]"><h1>نمایندگی‌ها</h1></a>
+                </div>
+                <div class="w-[77px] h-[27px] flex justify-center items-center gap-[5px]">
+                    <a href="" class="w-[24px] h-[24px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M21.5 7V17C21.5 20 20 22 16.5 22H8.5C5 22 3.5 20 3.5 17V7C3.5 4 5 2 8.5 2H16.5C20 2 21.5 4 21.5 7Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 2V9.85999C16 10.3 15.48 10.52 15.16 10.23L12.84 8.09003C12.65 7.91003 12.35 7.91003 12.16 8.09003L9.84003 10.23C9.52003 10.52 9 10.3 9 9.85999V2H16Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.75 14H18" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.5 18H18" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </a>
+                    <a href="" class="w-[48px] h-[27px] text-[#282828] leading-normal font-semibold not-italic text-[14px]"><h1>وبلاگ</h1></a>
+                </div>
+                <div class="w-[117px] h-[27px] flex justify-center items-center gap-[5px]">
+                    <a href="" class="w-[24px] h-[24px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M22.47 18.33C22.47 18.69 22.39 19.06 22.22 19.42C22.05 19.78 21.83 20.12 21.54 20.44C21.05 20.98 20.51 21.37 19.9 21.62C19.3 21.87 18.65 22 17.95 22C16.93 22 15.84 21.76 14.69 21.27C13.54 20.78 12.39 20.12 11.25 19.29C10.1 18.45 9.01 17.52 7.97 16.49C6.94 15.45 6.01 14.36 5.18 13.22C4.36 12.08 3.7 10.94 3.22 9.81C2.74 8.67 2.5 7.58 2.5 6.54C2.5 5.86 2.62 5.21 2.86 4.61C3.1 4 3.48 3.44 4.01 2.94C4.65 2.31 5.35 2 6.09 2C6.37 2 6.65 2.06 6.9 2.18C7.16 2.3 7.39 2.48 7.57 2.74L9.89 6.01C10.07 6.26 10.2 6.49 10.29 6.71C10.38 6.92 10.43 7.13 10.43 7.32C10.43 7.56 10.36 7.8 10.22 8.03C10.09 8.26 9.9 8.5 9.66 8.74L8.9 9.53C8.79 9.64 8.74 9.77 8.74 9.93C8.74 10.01 8.75 10.08 8.77 10.16C8.8 10.24 8.83 10.3 8.85 10.36C9.03 10.69 9.34 11.12 9.78 11.64C10.23 12.16 10.71 12.69 11.23 13.22C11.77 13.75 12.29 14.24 12.82 14.69C13.34 15.13 13.77 15.43 14.11 15.61C14.16 15.63 14.22 15.66 14.29 15.69C14.37 15.72 14.45 15.73 14.54 15.73C14.71 15.73 14.84 15.67 14.95 15.56L15.71 14.81C15.96 14.56 16.2 14.37 16.43 14.25C16.66 14.11 16.89 14.04 17.14 14.04C17.33 14.04 17.53 14.08 17.75 14.17C17.97 14.26 18.2 14.39 18.45 14.56L21.76 16.91C22.02 17.09 22.2 17.3 22.31 17.55C22.41 17.8 22.47 18.05 22.47 18.33Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"/>
+                          </svg>
+                        </a>
+                    <a href="" class="w-[88px] h-[27px] text-[#282828] leading-normal font-semibold not-italic text-[14px]"><h1>تماس با ما</h1></a>
+                </div>
+            </div>
+            <div class="w-[170px] h-[42px] flex justify-center items-center gap-[10px] max-sm:hidden">
+                <div class="w-[118px] h-[27px] text-[#282828] leading-normal font-semibold not-italic text-[14px]"><h1>درباره هایسان</h1></div>
+                <div class="w-[42px] h-[42px]">
+                    <img src="../img/6 1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+
+    
+
+    
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+
+    <main>
+        <div class="w-[1512px] h-[19px] m-auto bg-amber-300">
+            <div class="w-[1062px] h-[19px] bg-lime-400 mt-[38px] mr-[391px] ml-[59px] flex mb-[17px]">
+                <div class="w-[187px] h-[19px] bg-green-300 text-[#4e4e4e] text-justify text-[14px] not-italic font-medium leading-normal ml-[758px]"><h1>هایسان/لوازم سرمایشی/ <span class="font-extrabold">اسپلیت</span></h1></div>
+                <div class="w-[117px] h-[19px] bg-yellow-200 text-[#4e4e4e] text-justify text-[13px] not-italic font-medium leading-normal"><h1>نمایش ۱- ۱۲ کالا از ۲۴</h1></div>
+            </div>
+        </div>
+
+        <div class="w-[1393px] h-[1410px] bg-sky-300 m-auto flex">
+            
+            <div class="w-[301px] h-[432px] bg-purple-400">
+                <div class="w-[301px] h-[57px] bg-[#fff] rounded-[14px] border-[0.4px] border-solid border-[#282828] mb-[19px] flex">
+                    <div class="w-[23.333px] h-[23.333px] bg-[#f11f19] mt-[18px] mr-[36.67px] mb-[15.67px] ml-[30px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3.33333 0C2.44928 0 1.60143 0.351189 0.976311 0.976311C0.351189 1.60143 0 2.44928 0 3.33333V20C0 20.8841 0.351189 21.7319 0.976311 22.357C1.60143 22.9821 2.44928 23.3333 3.33333 23.3333H20C20.8841 23.3333 21.7319 22.9821 22.357 22.357C22.9821 21.7319 23.3333 20.8841 23.3333 20V3.33333C23.3333 2.44928 22.9821 1.60143 22.357 0.976311C21.7319 0.351189 20.8841 0 20 0H3.33333ZM10 17.3567L5.48834 12.845L7.845 10.4883L10 12.6433L16.3217 6.32167L18.6783 8.67834L10 17.3567Z" fill="#F11F19"/>
+                          </svg>
+                    </div>
+                </div>
+                <div class="w-[301px] h-[356px] bg-[#fff] rounded-[24px] border-[0.4px] border-solid border-[#282828]"></div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+
+
+
+    <footer class="w-[1513px] h-[923px] bg-[#000] mt-[177px] max-sm:w-full max-sm:h-[434px] m-auto">
+        <div class="w-full h-[399px] pt-[48px] max-sm:w-full max-sm:h-[120px]">
+            <div class="w-[261px] h-[19px] mr-[50px] text-[#fff] text-[14px] not-italic font-semibold leading-normal max-sm:w-[261px] max-sm:h-[19px] max-sm:text-[14px] max-sm:mt-[20px]"><p>فروشگاه هایسان بررسی، انتخاب و خرید آنلاین</p></div>
+            <div class="w-[1422px] h-[120px] mt-[43px] mr-[45px] text-[#fff] text-[14px] not-italic font-semibold leading-normal max-sm:hidden"><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p></div>
+        </div>
+        <div class="sm:hidden mt-[14px] mr-[20px] text-[#fff] text-[14px] not-italic font-semibold leading-normal max-sm:w-[390px] max-sm:h-[48px] max-sm:text-[14px]"><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله </p></div>
+
+        <div class="w-full h-[574px] bg-[#000] pt-[32px] max-sm:w-full max-sm:h-[245px] relative">
+            <div class="w-[1387px] h-[287px] mr-[52px] flex mb-[46px] max-sm:w-[390px] max-sm:h-[180px]">
+                <div class="w-[214px] h-[287px] ml-[134px] max-sm:w-[88px] max-sm:h-[1770px]">
+
+                    <div class="w-[165px] h-[61px] flex mb-[17px] max-sm:w-[88px] max-sm:h-[33px] max-sm:mb-[25px]">
+                        <div class="w-[61px] h-[61px] ml-[14px] max-sm:w-[33px] max-sm:h-[33px] max-sm:ml-[14px]">
+                            <img src="../img/6 1.png" alt="">
+                        </div>
+                        <div class="w-[90px] h-[27px] mt-[17px] max-sm:w-[48px] max-sm:h-[14px]">
+                            <img src="../img/logo (4) 1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="w-[214px] h-[33px] mb-[40px] max-sm:w-[89px] max-sm:h-[14px] max-sm:mb-[43px]">
+                        <img src="../img/text-footer.png" alt="">
+                    </div>
+
+                    <div class="w-[125px] h-[136px] mr-[40px] max-sm:w-[51px] max-sm:h-[55px] max-sm:mr-[16px]">
+                        <img src="../img/logo.png" alt="">
+                    </div>
+
+                </div>
+
+
+                <div class="w-[127px] h-[168px] mt-[14px] ml-[146px] max-sm:w-[51px] max-sm:h-[90px] max-sm:ml-[81px]">
+
+                    <div class="w-[127px] h-[33px] flex mb-[23px] max-sm:w-[51px] max-sm:h-[14px] max-sm:mb-[12px]">
+                        <div class="w-[11px] h-[11px] bg-[#f11f19] rounded-full mt-[16px] ml-[17px] max-sm:w-[4px] max-sm:h-[4px] max-sm:mt-[7px] max-sm:ml-[6px]"></div>
+                        <div class="w-[99px] h-[33px] text-[#fff] text-right text-[24px] not-italic font-semibold leading-normal max-sm:w-[41px] max-sm:h-[14px] max-sm:text-[10px]"><p>محصولات</p></div>
+                    </div>
+
+                    <div class="w-[48px] h-[112px] mr-[17px] text-[#fff] text-right text-[14px] not-italic font-semibold leading-[200%] max-sm:w-[28px] max-sm:h-[64px] max-sm:text-[8px]">
+                        <a href="">فر</a>
+                        <br>
+                        <a href="">هود</a>
+                        <a href="">اسپیلت</a>
+                        <a href="">آبگرمکن</a>
+                    </div>
+
+                </div>
+
+
+                <div class="w-[136px] h-[168px] mt-[14px] ml-[239px] max-sm:w-[58px] max-sm:h-[89px] max-sm:ml-[]">
+
+                    <div class="w-full h-[33px] flex mb-[23px] max-sm:w-[58px] max-sm:h-[14px] max-sm:mb-[11px]">
+                        <div class="w-[11px] h-[11px] bg-[#f11f19] mt-[16px] ml-[13px] rounded-full max-sm:w-[4px] max-sm:h-[4px] max-sm:mt-[7px] max-sm:ml-[7px]"></div>
+                        <div class="w-[112px] h-[33px] text-[#fff] text-right text-[24px] not-italic font-semibold leading-normal max-sm:w-[47px] max-sm:h-[14px] max-sm:text-[10px]"><p>دسترسی‌ها</p></div>
+                    </div>
+
+                    <div class="w-[80px] h-[112px] mr-[16px] text-[#fff] text-right text-[14px] not-italic font-semibold leading-[200%] max-sm:w-[46px] max-sm:h-[64px] max-sm:text-[8px]">
+                        <a href="">خانه</a>
+                        <br>
+                        <a href="">درباره ما</a>
+                        <a href="">تماس با ما</a>
+                        <a href="">راهنمای خرید</a>
+                    </div>
+
+                </div>
+
+
+                <div class="w-[391px] h-[264px] mt-[14px] max-sm:hidden">
+                    <div class="w-[101px] h-[33px] flex mb-[23px]">
+                        <div class="w-[11px] h-[11px] bg-[#f11f19] mt-[16px] ml-[12px] rounded-full"></div>
+                        <div class="w-[78px] h-[33px] text-[#fff] text-right text-[24px] not-italic font-semibold leading-normal"><p>خبرنامه</p></div>
+                    </div>
+                    <div class="w-[178px] h-[19px] mr-[12px] mb-[37px] text-[#fff] text-right text-[14px] not-italic font-semibold leading-normal"><a href="">از آخرین تخفیف ها مطلع شوید</a></div>
+                    <div class="w-[368px] h-[60px] p-[10px] flex justify-end items-center flex-shrink-0 bg-[#fff] rounded-[10px] mr-[12px]">
+                        <input type="email" class="w-full h-full text-[#000] text-[14px] not-italic font-extralight leading-normal outline-none" placeholder="ایمیل خود را وارد کنید">
+                    </div>
+                    <a href="" class="w-[155px] h-[48px] bg-[#f11f19] rounded-[10px] p-[10px] flex justify-center items-center flex-shrink-0 mt-[44px] mr-[220px]">
+                        <div class="w-[24px] h-[19px] text-[#fff] text-right text-[14px] not-italic font-semibold leading-normal"><p>ثبت</p></div>
+                    </a>
+                </div>
+
+                <!-- responsive -->
+                <div class="sm:hidden w-[247px] h-[64px] absolute top-[150px] left-[50px] flex">
+                    <div class="w-[111px] h-[35px] ml-[16px]">
+                        <div class="w-[45px] h-[14px] flex mb-[10px]">
+                            <div class="w-[4px] h-[4px] bg-[#f11f19] rounded-full mt-[7px] ml-[8px]"></div>
+                            <div class="w-[33px] h-[14px] text-[#fff] text-[10px] not-italic leading-normal font-semibold"><p>خبرنامه</p></div>
+                        </div>
+                        <div href="" class="w-[101px] h-[11px] mr-[10px] text-[#fff] text-[7px] not-italic leading-normal font-semibold"><a href="">از آخرین تخفیف ها مطلع شوید</a></div>
+                    </div>
+
+                    <div class="w-[120px] h-[45px] mt-[19px]">
+                        <div class="w-[120px] h-[21px]">
+                            <input type="email" class="w-full h-full rounded-[4px] outline-none text-[#000] text-[10px] font-extralight leading-normal">
+                        </div>
+                        <a href="" class="w-[51px] h-[20px] bg-[#f11f19] rounded-[4px] mt-[4px] mr-[69px] flex justify-center items-center">
+                            <div class="w-[14px] h-[11px] text-[#fff] text-[8px] not-italic leading-normal font-semibold"><p>ثبت</p></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- responsive -->
+
+
+            </div>
+            <div class="w-[1442px] h-[1px] bg-line-footer m-auto mb-[25px] max-sm:w-full mt-[-40px] max-sm:mb-[5px]"></div>
+            <div class="w-[404px] h-[50px] m-auto mb-[16px] max-sm:w-[90px] max-sm:h-[10px] max-sm:mt-[5px] max-sm:mb-[2px]">
+                <img src="../img/p.png" alt="">
+            </div>
+            <div class="w-[40px] h-[40px] m-auto max-sm:w-[6px] max-sm:h-[6px]">
+                <img src="../img/eskano-logo.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+    
+
+    
+
+    <script src="../js/script.js"></script>
+    <!-- <script src="js/script2.js"></script> -->
+    <!-- <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js'></script> -->
+</body>
+</html>

@@ -190,6 +190,7 @@
 
 
 
+
     <!-- Navbar -->
     <nav class="sticky top-0 z-[2]">
         <div class="w-[1513px] h-[62px] m-auto bg-[#fff] pr-[40px] pl-[40px] pt-[10px] pb-[10px] border-t-[2px] border-solid border-red-600 navbarBoxshadow flex justify-center items-center gap-[200px] max-sm:w-full max-sm:h-[82px] max-sm:flex max-sm:justify-between max-sm:items-center max-sm:pt-[25px] max-sm:pb-[25px] max-sm:pr-[20px] max-sm:pl-[20px] max-sm:gap-0 max-sm:border-none">
@@ -230,8 +231,8 @@
                         </a>
                     <a href="" class="w-[103px] h-[27px] text-[14px] text-[#F11F19] font-semibold leading-normal not-italic"><p>صفحه اصلی</p></a>
                 </div>
-                <div class="w-[140px] h-[27px] flex justify-center items-center gap-[5px]">
-                    <a href="" class="w-[24px] h-[24px]">
+                <div class="w-[140px] h-[27px] flex justify-center items-center gap-[5px]" onclick="showProducts()">
+                    <a href="#" class="w-[24px] h-[24px]">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                             <path d="M3.50977 11.2197V15.7097C3.50977 20.1997 5.30977 21.9997 9.79977 21.9997H15.1898C19.6798 21.9997 21.4798 20.1997 21.4798 15.7097V11.2197" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M12.5 12C14.33 12 15.68 10.51 15.5 8.68L14.84 2H10.17L9.49999 8.68C9.31999 10.51 10.67 12 12.5 12Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -239,14 +240,17 @@
                             <path d="M6.13988 12C7.78988 12 9.27988 10.66 9.43988 9.01L9.65988 6.8L10.1399 2H7.08988C4.46988 2 3.46988 3 3.10988 5.6L2.83988 8.35C2.63988 10.36 4.11988 12 6.13988 12Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M12.5 17C10.83 17 10 17.83 10 19.5V22H15V19.5C15 17.83 14.17 17 12.5 17Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg>
-                        </a>
-                        <a href="" class="w-[82px] h-[27px] text-[#282828] font-semibold not-italic leading-normal text-[14px]"><h1>محصولات</h1></a>
-                        <button class="w-[24px] h-[24px]">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                                <path d="M7.5 10L12.5 14L17.5 10" stroke="#28303F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              </svg>
-                        </button>
-                    </div>
+                    </a>
+
+                    <a href="#" class="w-[82px] h-[27px] text-[#282828] font-semibold not-italic leading-normal text-[14px]"><h1>محصولات</h1></a>
+
+                    <button class="w-[24px] h-[24px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M7.5 10L12.5 14L17.5 10" stroke="#28303F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </button>
+
+                </div>
                 <div class="w-[190px] h-[27px] flex justify-center items-center gap-[10px]">
                     <a href="" class="w-[24px] h-[24px]">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -301,6 +305,77 @@
         </div>
     </nav>
     <!-- Navbar -->
+
+
+
+
+
+    
+
+    <!-- menu bar desktop -->
+    <div id="Products-show-hide" class="w-[1512px] h-[556px] bg-[#fff] sticky z-[2] top-[62px] m-auto hidden">
+        <div class="w-full h-[17px] bg-[#f11f19] mb-[101.45px]"></div>
+        <div class="w-[1366px] h-[290px] m-auto grid grid-cols-4 gap-[94px] mb-[81px]">
+            <div class="rounded-[24px] relative box-scale-menubar">
+                <div class="w-[252.884px] h-[53.495px] bg-[#111010] border-solid border-[1px] border-[#fff] absolute flex justify-center items-center bottom-[14.5px] right-[9.85px] left-[9.06px]">
+                    <a href="" class="w-[108.716px] h-[27.982px] text-[#fff] text-center text-[14px] not-italic font-medium leading-[28px]"><p>لوازم گرمایشی</p></a>
+                </div>
+                <a href="">
+                    <img class="rounded-[24px]" src="img/960x0 1.png" alt="">
+                </a>
+            </div>
+
+            <div class="rounded-[24px] relative box-scale-menubar">
+                <div class="w-[252.884px] h-[53.495px] bg-[#111010] border-solid border-[1px] border-[#fff] absolute flex justify-center items-center bottom-[14.5px] right-[9.85px] left-[9.06px]">
+                    <a href="" class="w-[108.716px] h-[27.982px] text-[#fff] text-center text-[14px] not-italic font-medium leading-[28px]"><p>لوازم گرمایشی</p></a>
+                </div>
+                <a href="">
+                    <img class="rounded-[24px]" src="img/960x0 1.png" alt="">
+                </a>
+            </div>
+
+            <div class="rounded-[24px] relative box-scale-menubar">
+                <div class="w-[252.884px] h-[53.495px] bg-[#111010] border-solid border-[1px] border-[#fff] absolute flex justify-center items-center bottom-[14.5px] right-[9.85px] left-[9.06px]">
+                    <a href="" class="w-[108.716px] h-[27.982px] text-[#fff] text-center text-[14px] not-italic font-medium leading-[28px]"><p>لوازم گرمایشی</p></a>
+                </div>
+                <a href="">
+                    <img class="rounded-[24px]" src="img/960x0 1.png" alt="">
+                </a>
+            </div>
+
+            <div class="rounded-[24px] relative box-scale-menubar">
+                <div class="w-[252.884px] h-[53.495px] bg-[#111010] border-solid border-[1px] border-[#fff] absolute flex justify-center items-center bottom-[14.5px] right-[9.85px] left-[9.06px]">
+                    <a href="" class="w-[108.716px] h-[27.982px] text-[#fff] text-center text-[14px] not-italic font-medium leading-[28px]"><p>لوازم گرمایشی</p></a>
+                </div>
+                <a href="">
+                    <img class="rounded-[24px]" src="img/960x0 1.png" alt="">
+                </a>
+            </div>
+        </div>
+        <a href="">
+            <div class="w-[32px] h-[32px] bg-[#f11f19] m-auto rounded-[8px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <g filter="url(#filter0_d_60_212)">
+                      <path d="M5.43957 11.88L14.1329 20.5733C15.1596 21.6 16.8396 21.6 17.8662 20.5733L26.5596 11.88" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_60_212" x="0.439453" y="10.88" width="31.1201" height="19.4634" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_60_212"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_60_212" result="shape"/>
+                      </filter>
+                    </defs>
+                  </svg>
+            </div>
+        </a>
+    </div>
+    <!-- menu bar desktop -->
+
 
 
     
@@ -807,7 +882,7 @@
 
 
     <footer class="w-[1513px] h-[923px] bg-[#000] mt-[177px] max-sm:w-full max-sm:h-[434px]">
-        <div class="w-full h-[399px] pt-[48px] max-sm:w-full max-sm:h-[189px]">
+        <div class="w-full h-[399px] pt-[48px] max-sm:w-full max-sm:h-[120px]">
             <div class="w-[261px] h-[19px] mr-[50px] text-[#fff] text-[14px] not-italic font-semibold leading-normal max-sm:w-[261px] max-sm:h-[19px] max-sm:text-[14px] max-sm:mt-[20px]"><p>فروشگاه هایسان بررسی، انتخاب و خرید آنلاین</p></div>
             <div class="w-[1422px] h-[120px] mt-[43px] mr-[45px] text-[#fff] text-[14px] not-italic font-semibold leading-normal max-sm:hidden"><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p></div>
         </div>

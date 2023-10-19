@@ -477,3 +477,12 @@ body{
 .bg-line-footer{
   background: linear-gradient(270deg, rgba(255, 251, 250, 0.00) 0%, #FFFBFA 49.6%, rgba(255, 251, 250, 0.00) 99.2%);
 }
+
+.show-Products{
+  display: block!important;
+}
+
+.box-scale-menubar:hover{
+  scale: 1.1;
+  transition: all 1s ease-in-out;
+}
