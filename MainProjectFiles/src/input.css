@@ -4,12 +4,13 @@
 
 @font-face {
     font-family: "anjoman";
-    src: url("../font/AnjomanBlack.woff") format("woff"),
-         url("../font/AnjomanExtraLight.woff") format("woff"),
-         url("../font/AnjomanHeavy.woff") format("woff"),
-         url("../font/AnjomanMedium.woff") format("woff"),
-         url("../font/AnjomanSemiBold.woff") format("woff"),
-         url("../font/AnjomanThin.woff") format("woff");
+    src: url("../../font/AnjomanBlack.woff") format("woff"),
+         url("../../font/AnjomanExtraLight.woff") format("woff"),
+         url("../../font/AnjomanHeavy.woff") format("woff"),
+         url("../../font/AnjomanMedium.woff") format("woff"),
+         url("../../font/AnjomanSemiBold.woff") format("woff"),
+         url("../../font/AnjomanThin.woff") format("woff"),
+         url("../../font/AnjomanExtraBold.woff") format("woff");
     font-display: swap; /* Ensure fallback fonts are used until custom fonts are loaded */
 }
 
@@ -50,7 +51,7 @@ body{
 
 .burgerMenu-style{
     opacity: 2;
-    background-color: #fff;
+    background-color: #dfdfdf;
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(5px);
     position: absolute;
