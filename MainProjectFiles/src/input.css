@@ -66,3 +66,59 @@ body{
 .burgerMenu-show{
     display: block !important;
 }
+
+
+/* for big banner */
+
+.slider {
+    width: 100%;
+    height: 405px; /*relative to width*/
+    max-height: 675px; /*relative to max-width*/
+    min-height: 168px; /*relative to min-width*/
+    overflow: hidden;
+    position: relative;  display:flex;
+    flex-direction: column;
+    justify-content: center;
+  } 
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .button {
+    display: inline-block;
+    /* padding: 2.5%; */
+  /*   background: #000; */
+    color: #fff;
+    z-index: 10; /*INSURE BUTTONS ARE ON TOP */
+  }
+  
+  .slide {
+    width: 1293px;
+    height: 405px;
+    margin: auto;
+    position: absolute;
+    left: 100%;
+    text-align: center;
+    transition: left 2s ease;
+    border-radius: 40px;
+  }
+  
+  /*initial styles for each slide update the colors/rules for each container */
+  #slide1 {
+    left: 0; /* don't change this one */
+  }
+  #slide2 {
+    
+  }
+  #slide3 {
+    
+  }
+  #slide4 {
+    
+  }
+
+.big-banner-slide-bg-box{
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.36);
+    backdrop-filter: blur(17px);
+}
