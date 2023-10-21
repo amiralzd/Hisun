@@ -97,3 +97,9 @@ document.getElementById('prev').onclick = moveRight;
 
 var nextBut = document.getElementById('next');
 nextBut.onclick = moveLeft;
+
+
+
+
+
+// for new arrival
