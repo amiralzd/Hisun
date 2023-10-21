@@ -106,15 +106,16 @@ body{
   /*initial styles for each slide update the colors/rules for each container */
   #slide1 {
     left: 0; /* don't change this one */
+    background: #ae5f15;
   }
   #slide2 {
-    
+    background: #149b10;
   }
   #slide3 {
-    
+    background: #08658f;
   }
   #slide4 {
-    
+    background: #abb110;
   }
 
 .big-banner-slide-bg-box{
