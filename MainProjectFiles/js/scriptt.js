@@ -102,4 +102,4 @@ nextBut.onclick = moveLeft;
 
 
 
-// for new arrival
+// for andre
