@@ -262,3 +262,6 @@ body{
 
 /* for andre */
 
+.keypoints-boxShadow{
+  background: var(--styleswhite, #FFF);
+}
