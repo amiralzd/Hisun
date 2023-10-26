@@ -102,4 +102,45 @@ nextBut.onclick = moveLeft;
 
 
 
-// for andre
+function latrachShow(){
+  let x = document.getElementById("latrach");
+  x.classList.add("latrach-style-show");
+}
+
+function latrachHide(){
+  let x = document.getElementById("latrach");
+  x.classList.remove("latrach-style-show");
+}
+
+
+function latrachShow2(){
+  let x = document.getElementById("latrach2");
+  x.classList.add("latrach-style-show");
+}
+
+function latrachHide2(){
+  let x = document.getElementById("latrach2");
+  x.classList.remove("latrach-style-show");
+}
+
+
+function latrachShow3(){
+  let x = document.getElementById("latrach3");
+  x.classList.add("latrach-style-show");
+}
+
+function latrachHide3(){
+  let x = document.getElementById("latrach3");
+  x.classList.remove("latrach-style-show");
+}
+
+
+function latrachShow4(){
+  let x = document.getElementById("latrach4");
+  x.classList.add("latrach-style-show");
+}
+
+function latrachHide4(){
+  let x = document.getElementById("latrach4");
+  x.classList.remove("latrach-style-show");
+}

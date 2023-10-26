@@ -313,3 +313,26 @@ body{
   border-radius: 40px;
   background: rgba(255, 251, 250, 0.50);
 }
+
+.latrach-style-show{
+  display: block !important;
+}
+
+.latrach-style{
+  border-radius: 124px 124px 24px 24px;
+  background: rgba(0, 0, 0, 0.80);
+}
+
+#email::placeholder{
+  color: #000;
+  text-align: justify;
+  font-family: Anjoman;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.line-footer{
+  background: linear-gradient(270deg, rgba(255, 251, 250, 0.00) 0%, #FFFBFA 49.6%, rgba(255, 251, 250, 0.00) 99.2%);
+}
